@@ -160,63 +160,6 @@ Description: Static lib containing OpenBSD funcs
  This library is used in some programs found on Ragnarok
  systems.
 
-Package: linux-headers-6.1.76-ragnarok-amd64
-Source: linux-upstream
-Version: 6.1.76-ragnarok-amd64-1
-Architecture: amd64
-Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 51814
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: kernel
-Filename: pool/main/l/linux-upstream/linux-headers-6.1.76-ragnarok-amd64_6.1.76-ragnarok-amd64-1_amd64.deb
-Size: 8768212
-SHA256: 3b7fecafefb5385f307e2da2cb096f30b013cee63e40c95c0a89d7517f2a4315
-SHA1: ef7fb3f285a86ab2bb160e67f2529e93c30b27f9
-MD5sum: d42fb198a56764d1a6e60ce5dad1806d
-Description: Linux kernel headers for 6.1.76-ragnarok-amd64 on amd64
- This package provides kernel header files for 6.1.76-ragnarok-amd64 on amd64
- .
- This is useful for people who need to build external modules
-
-Package: linux-image-6.1.76-ragnarok-amd64
-Source: linux-upstream
-Version: 6.1.76-ragnarok-amd64-1
-Architecture: amd64
-Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 409661
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: kernel
-Filename: pool/main/l/linux-upstream/linux-image-6.1.76-ragnarok-amd64_6.1.76-ragnarok-amd64-1_amd64.deb
-Size: 65845396
-SHA256: ebeb814ad9bff029f8a04bd36e15d8b3a08d9c4f8923bc5355397c2cbad9c39f
-SHA1: 194aca9c59876d8ea8162baf279a599565d6b006
-MD5sum: c39a49d99682915ec85089e628c38a5e
-Description: Linux kernel, version 6.1.76-ragnarok-amd64
- This package contains the Linux kernel, modules and corresponding other
- files, version: 6.1.76-ragnarok-amd64.
-
-Package: linux-libc-dev
-Source: linux-upstream
-Version: 6.1.76-ragnarok-amd64-1
-Architecture: amd64
-Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 6623
-Provides: linux-kernel-headers
-Multi-Arch: same
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: devel
-Filename: pool/main/l/linux-upstream/linux-libc-dev_6.1.76-ragnarok-amd64-1_amd64.deb
-Size: 1274456
-SHA256: dce63afe62054662853303fb251697c808e88178186b18798576e5c1bdcf9178
-SHA1: 31047f4868ace72c2c4d25f45c3b37898e90b9c4
-MD5sum: 7b45c2a241e226afbea077b656770751
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-
 Package: mandoc
 Version: 1.14.6-99ragnarok01
 Architecture: amd64
