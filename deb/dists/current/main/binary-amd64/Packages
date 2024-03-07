@@ -1,0 +1,314 @@
+Package: base-files
+Version: 999+ragnarok01-1
+Architecture: amd64
+Essential: yes
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 344
+Pre-Depends: awk
+Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Provides: base
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Filename: pool/main/b/base-files/base-files_999+ragnarok01-1_amd64.deb
+Size: 70964
+SHA256: b49a948eca20ae922b540dcb319adce03194be833b11cbafddf5347eb29dd7ca
+SHA1: 8017a184994ab5b55c7ed07f57c3ea0e4a196699
+MD5sum: 364f55833c129dcbf72a9313054996a9
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: bash
+Version: 5.2.15-99ragnarok01
+Architecture: amd64
+Essential: yes
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 7337
+Pre-Depends: libc6 (>= 2.36), libtinfo6 (>= 6)
+Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
+Recommends: bash-completion (>= 20060301-0)
+Suggests: bash-doc
+Conflicts: bash-completion (<< 20060301-0)
+Replaces: bash-completion (<< 20060301-0), bash-doc (<= 2.05-1)
+Multi-Arch: foreign
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Priority: required
+Section: shells
+Filename: pool/main/b/bash/bash_5.2.15-99ragnarok01_amd64.deb
+Size: 1538288
+SHA256: a54d07021f219d69ad8be0671ed86fb7675b516b6b78440f51c1c87c0483e74f
+SHA1: 30bdff9283ccb0d4faeb01763b18e52922bf47df
+MD5sum: a70d8c013bb179d4ccb7889962aedda3
+Description: GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ Bash is ultimately intended to be a conformant implementation of the
+ IEEE POSIX Shell and Tools specification (IEEE Working Group 1003.2).
+ .
+ The Programmable Completion Code, by Ian Macdonald, is now found in
+ the bash-completion package.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: bash-builtins
+Source: bash
+Version: 5.2.15-99ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 913
+Depends: bash (= 5.2.15-99ragnarok01)
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Priority: optional
+Section: utils
+Filename: pool/main/b/bash/bash-builtins_5.2.15-99ragnarok01_amd64.deb
+Size: 155420
+SHA256: ba76b00284cf2901c7e4ea6d089918dbf2223b12c1dd4131e3c7383278d3c3ea
+SHA1: ebfe33582ae5d4935aeeb3c00743d21b2e37ed53
+MD5sum: fce64eaddccf041c978007914ab697a4
+Description: Bash loadable builtins - headers & examples
+ Bash can dynamically load new builtin commands.  Included are the
+ necessary headers to compile your own builtins and lots of examples.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: bash-doc
+Source: bash
+Version: 5.2.15-99ragnarok01
+Architecture: all
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 3410
+Depends: dpkg (>= 1.15.4) | install-info
+Replaces: bash (<< 4.3-2)
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Priority: optional
+Section: doc
+Filename: pool/main/b/bash/bash-doc_5.2.15-99ragnarok01_all.deb
+Size: 1962716
+SHA256: bab93e264f5cce5febbbb9a9bcef5f027cd6595301105beac09ade101dc07004
+SHA1: d43381b1652a118078b78f021a8b9a8271a75cea
+MD5sum: b4ac28de510c48d876c902fc3db25bf8
+Description: Documentation and examples for the GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ This package contains the distributable documentation, all the
+ examples and the main changelog.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: bash-static
+Source: bash
+Version: 5.2.15-99ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 2836
+Depends: passwd (>= 1:4.0.3-10), debianutils (>= 5.6-0.1)
+Suggests: bash-doc
+Built-Using: glibc (= 2.36-9+deb12u3)
+Multi-Arch: foreign
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Priority: optional
+Section: shells
+Filename: pool/main/b/bash/bash-static_5.2.15-99ragnarok01_amd64.deb
+Size: 1190608
+SHA256: 894adb22e517ed3398e02b11be410cf424cd262999633a2a9a7272f0c75ab50f
+SHA1: 0fa5b30ff22108c4e22f6b2589be84ed7a425a81
+MD5sum: 53cf68a71934bd35ff2b26ab4cb0bdc3
+Description: GNU Bourne Again SHell (static version)
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ Statically linked.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: ed
+Version: 7.4-ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 141
+Depends: libc6 (>= 2.34)
+Homepage: https://github.com/ibara/oed
+Priority: optional
+Section: editors
+Filename: pool/main/e/ed/ed_7.4-ragnarok01_amd64.deb
+Size: 48944
+SHA256: b300d9f8b08a6a6ecd729688b2cfdc998197777c5a084bc3f3f6b4e276aeabac
+SHA1: c6ce267645ccc8e91f2793c40ecb4881e0171312
+MD5sum: 28af23382101db24ff55ffd06cfa2eda
+Description: OpenBSD's ed.
+ This is the ed version used in Ragnarok.
+
+Package: libopenbsd
+Version: 01
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Homepage: https://github.com/RagnarokOS/libopenbsd
+Architecture: amd64
+Priority: optional
+Section: devel
+Filename: pool/main/libo/libopenbsd/libopenbsd_01_amd64.deb
+Size: 19644
+SHA256: 5466575a87600962b32dcc6388e4f7bb885a62ef79079e58961880ca8766ad65
+SHA1: 8b10e44975706a00bc59be9c919caea06dc180f0
+MD5sum: 14b48accf754be978a50ecc9a0f60f8b
+Description: Static lib containing OpenBSD funcs
+ This library is used in some programs found on Ragnarok
+ systems.
+
+Package: linux-headers-6.1.76-ragnarok-amd64
+Source: linux-upstream
+Version: 6.1.76-ragnarok-amd64-1
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 51814
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.1.76-ragnarok-amd64_6.1.76-ragnarok-amd64-1_amd64.deb
+Size: 8768212
+SHA256: 3b7fecafefb5385f307e2da2cb096f30b013cee63e40c95c0a89d7517f2a4315
+SHA1: ef7fb3f285a86ab2bb160e67f2529e93c30b27f9
+MD5sum: d42fb198a56764d1a6e60ce5dad1806d
+Description: Linux kernel headers for 6.1.76-ragnarok-amd64 on amd64
+ This package provides kernel header files for 6.1.76-ragnarok-amd64 on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.1.76-ragnarok-amd64
+Source: linux-upstream
+Version: 6.1.76-ragnarok-amd64-1
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 409661
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.1.76-ragnarok-amd64_6.1.76-ragnarok-amd64-1_amd64.deb
+Size: 65845396
+SHA256: ebeb814ad9bff029f8a04bd36e15d8b3a08d9c4f8923bc5355397c2cbad9c39f
+SHA1: 194aca9c59876d8ea8162baf279a599565d6b006
+MD5sum: c39a49d99682915ec85089e628c38a5e
+Description: Linux kernel, version 6.1.76-ragnarok-amd64
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.76-ragnarok-amd64.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.1.76-ragnarok-amd64-1
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 6623
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-upstream/linux-libc-dev_6.1.76-ragnarok-amd64-1_amd64.deb
+Size: 1274456
+SHA256: dce63afe62054662853303fb251697c808e88178186b18798576e5c1bdcf9178
+SHA1: 31047f4868ace72c2c4d25f45c3b37898e90b9c4
+MD5sum: 7b45c2a241e226afbea077b656770751
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: mandoc
+Version: 1.14.6-99ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 1443
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Homepage: http://mdocml.bsd.lv/
+Priority: optional
+Section: doc
+Filename: pool/main/m/mandoc/mandoc_1.14.6-99ragnarok01_amd64.deb
+Size: 415884
+SHA256: 2fe9bef457589ba0b8ccbee930b22c514375e6a08fd59f0c5dd6338c8b4c74ac
+SHA1: d044fcb95100bd9c29e74c94ff4e6f71fb398232
+MD5sum: 2ca56eda17044805a81566f9004d77d9
+Description: BSD manpage compiler toolset
+ mandoc is a suite of tools compiling mdoc, the roff macro language of choice
+ for BSD manual pages, and man, the predominant historical language for UNIX
+ manuals. It is small, ISO C, ISC-licensed, and quite fast. The main component
+ of the toolset is the mandoc utility program, based on the libmandoc
+ validating compiler, to format output for UNIX terminals (with support for
+ wide-character locales), XHTML, HTML, PostScript, and PDF.
+ .
+ This is the default man implementation in Ragnarok.
+
+Package: oksh
+Version: 7.4-ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 382
+Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
+Homepage: https://github.com/I-LeCorbeau/oksh
+Priority: required
+Section: shells
+Filename: pool/main/o/oksh/oksh_7.4-ragnarok01_amd64.deb
+Size: 183432
+SHA256: d782ca0ceaf4f9107a8552a3327449b9764932d26ff98c90236d069b593dce2b
+SHA1: 71bf9c20996b453b034ddecdf1eb73f28a609308
+MD5sum: c3efa59fc989a0c894fa92d3d334e850
+Description: OpenBSD ksh.
+ Portable version of OpenBSD's korn shell implementation.
+ Used as the default login/interactive shell in Ragnarok.
+
+Package: openrcs
+Version: 01
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Homepage: https://github.com/RagnarokOS/openrcs
+Architecture: amd64
+Priority: optional
+Section: vcs
+Filename: pool/main/o/openrcs/openrcs_01_amd64.deb
+Size: 80336
+SHA256: 3a264620ca22436a9c01f0991692539c3a25b5016b594c16da4ed3a0225ee59b
+SHA1: 71e5dbce3bc30188b87257abb95276e32f1f2c8c
+MD5sum: ebc0d293bc0dca70ab89b3524aacf402
+Description: OpenBSD's version of RCS (Revision Control System)
+ This program is part of Ragnarok's base system to allow putting
+ files under a VCS without installing anything else.
+
+Package: ragnarok-base
+Version: 01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 434
+Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libopenbsd, adduser, openrcs
+Homepage: https://github.com/RagnarokOS/src
+Priority: standard
+Section: base
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01_amd64.deb
+Size: 68680
+SHA256: 497dff8ccb46b51fdea6a992fe0f4287f176990d78d7385923c6dea282af3e65
+SHA1: 231b4615f4f716501e644dc8a2ec1227dfa6200d
+MD5sum: 8dac80824e5051cc0df958fa93a7cb17
+Description: files for Ragnarok
+ Package providing extra files for Ragnarok, as well as
+ a postinst script that sets up the base system. This also
+ serves as a metapackage, fetching other packages required
+ by the base system.
+
+Package: yacc
+Version: 99ragnarok01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 123
+Homepage: https://github.com/openbsd/src/tree/master/usr.bin/yacc
+Priority: optional
+Section: devel
+Filename: pool/main/y/yacc/yacc_99ragnarok01_amd64.deb
+Size: 43868
+SHA256: 035c26a73d1731ba3cf8dc516efccb38c09cea2a2c2482b28fd5e9db3e76b05e
+SHA1: cdf3b7504ab05b4e8f2429c14069c9dcd418907a
+MD5sum: 99d29f9813d735507561ca5a1fb56a82
+Description: OpenBSD's yacc
+ Portable version of OpenBSD's yacc. This is the default yacc
+ implementation used in Ragnarok.
+
