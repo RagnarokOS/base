@@ -164,16 +164,16 @@ Package: mandoc
 Version: 1.14.6-99ragnarok01
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 1443
+Installed-Size: 1409
 Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
 Homepage: http://mdocml.bsd.lv/
 Priority: optional
 Section: doc
 Filename: pool/main/m/mandoc/mandoc_1.14.6-99ragnarok01_amd64.deb
-Size: 415884
-SHA256: 2fe9bef457589ba0b8ccbee930b22c514375e6a08fd59f0c5dd6338c8b4c74ac
-SHA1: d044fcb95100bd9c29e74c94ff4e6f71fb398232
-MD5sum: 2ca56eda17044805a81566f9004d77d9
+Size: 406040
+SHA256: e03aaa4e942ea0dbc1a27cb7e6939a29aa552b98776dcbd7a09cca2ebd3015fa
+SHA1: 23defb7cb4bd42d1ce6e0de3d57c4b57951a4b0b
+MD5sum: 7081f5c1e10e78b79112e411253dfb7e
 Description: BSD manpage compiler toolset
  mandoc is a suite of tools compiling mdoc, the roff macro language of choice
  for BSD manual pages, and man, the predominant historical language for UNIX
