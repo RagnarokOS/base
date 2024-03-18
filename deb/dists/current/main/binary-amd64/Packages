@@ -228,10 +228,10 @@ Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
 Filename: pool/main/r/ragnarok-base/ragnarok-base_01_amd64.deb
-Size: 14592
-SHA256: 74e1e7fbe64948643062553aa1cb8f7e5c7131d71ad54b78b91b5d8c8e6b2572
-SHA1: 94e09a27c9702f26b0ad38e76ea5fc2c7bdbe403
-MD5sum: a902c82d8f19682ba9901111081844ff
+Size: 14588
+SHA256: b01148329db1ba8fc0d30b4f790c7fcdba79a924988e908d761ba68dea7c4af8
+SHA1: b74ca33de46293ba6238f0668235a65bd3f9d4d2
+MD5sum: 71ac2f51a201548c8e8ebc833a7e85e0
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
