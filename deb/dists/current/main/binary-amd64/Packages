@@ -28,7 +28,7 @@ Version: 5.2.15-99ragnarok01
 Architecture: amd64
 Essential: yes
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 7337
+Installed-Size: 7155
 Pre-Depends: libc6 (>= 2.36), libtinfo6 (>= 6)
 Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
 Recommends: bash-completion (>= 20060301-0)
@@ -40,10 +40,10 @@ Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 Priority: required
 Section: shells
 Filename: pool/main/b/bash/bash_5.2.15-99ragnarok01_amd64.deb
-Size: 1538288
-SHA256: a54d07021f219d69ad8be0671ed86fb7675b516b6b78440f51c1c87c0483e74f
-SHA1: 30bdff9283ccb0d4faeb01763b18e52922bf47df
-MD5sum: a70d8c013bb179d4ccb7889962aedda3
+Size: 1467296
+SHA256: d900baf4b049adc8555f0a4ac9b4f4ce078076da32d1f008671abe9da3ae2f82
+SHA1: 77bbae423a658ef5357e0b0f0edbc650d3ffcbae
+MD5sum: 4ab7a5ab4f1615db46a04897f9d9bbe4
 Description: GNU Bourne Again SHell
  Bash is an sh-compatible command language interpreter that executes
  commands read from the standard input or from a file.  Bash also
@@ -61,16 +61,16 @@ Source: bash
 Version: 5.2.15-99ragnarok01
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 913
+Installed-Size: 1153
 Depends: bash (= 5.2.15-99ragnarok01)
 Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 Priority: optional
 Section: utils
 Filename: pool/main/b/bash/bash-builtins_5.2.15-99ragnarok01_amd64.deb
-Size: 155420
-SHA256: ba76b00284cf2901c7e4ea6d089918dbf2223b12c1dd4131e3c7383278d3c3ea
-SHA1: ebfe33582ae5d4935aeeb3c00743d21b2e37ed53
-MD5sum: fce64eaddccf041c978007914ab697a4
+Size: 155676
+SHA256: f3deb566a97fdaf5e466a03aab697f3aff5b86e087715b88769fb3a0478f2841
+SHA1: b6dbdcb380685a98ec6fae053a6f8ac13bd11029
+MD5sum: eb95ad4f8f4035718b89607c34b18071
 Description: Bash loadable builtins - headers & examples
  Bash can dynamically load new builtin commands.  Included are the
  necessary headers to compile your own builtins and lots of examples.
@@ -88,10 +88,10 @@ Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 Priority: optional
 Section: doc
 Filename: pool/main/b/bash/bash-doc_5.2.15-99ragnarok01_all.deb
-Size: 1962716
-SHA256: bab93e264f5cce5febbbb9a9bcef5f027cd6595301105beac09ade101dc07004
-SHA1: d43381b1652a118078b78f021a8b9a8271a75cea
-MD5sum: b4ac28de510c48d876c902fc3db25bf8
+Size: 1962648
+SHA256: 5c33e4b2f3a1c3d2663bdfc134b655619a56d083fb6ee25dd17a6780779cbd6a
+SHA1: e759b2528eae10fee652efb2c616c3e6fd0c9d67
+MD5sum: 39067e2c775f353140674ef714cc6cc2
 Description: Documentation and examples for the GNU Bourne Again SHell
  Bash is an sh-compatible command language interpreter that executes
  commands read from the standard input or from a file.  Bash also
@@ -106,19 +106,19 @@ Source: bash
 Version: 5.2.15-99ragnarok01
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 2836
+Installed-Size: 2472
 Depends: passwd (>= 1:4.0.3-10), debianutils (>= 5.6-0.1)
 Suggests: bash-doc
-Built-Using: glibc (= 2.36-9+deb12u3)
+Built-Using: glibc (= 2.36-9+deb12u4)
 Multi-Arch: foreign
 Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 Priority: optional
 Section: shells
 Filename: pool/main/b/bash/bash-static_5.2.15-99ragnarok01_amd64.deb
-Size: 1190608
-SHA256: 894adb22e517ed3398e02b11be410cf424cd262999633a2a9a7272f0c75ab50f
-SHA1: 0fa5b30ff22108c4e22f6b2589be84ed7a425a81
-MD5sum: 53cf68a71934bd35ff2b26ab4cb0bdc3
+Size: 1057648
+SHA256: be9824b49213b8f6f82c33e4d7b75c25431947463f262affa4ea8defd1d071a7
+SHA1: b180d5a901f47d6ac82958bfe78ff8f1ab865032
+MD5sum: d40a0a108835eadd0a76a1d3d9bb4d36
 Description: GNU Bourne Again SHell (static version)
  Bash is an sh-compatible command language interpreter that executes
  commands read from the standard input or from a file.  Bash also
