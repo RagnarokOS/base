@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 13 Mar 2024 12:34:20 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01
+Distribution: unstable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01) unstable; urgency=medium
+ .
+   * Initial build of ragnarok-base.
+Checksums-Sha1:
+ 5f761183140858954e200ff0980fd793e76d7120 6464 ragnarok-base_01_amd64.buildinfo
+ 5a9015c50d95b36bb88f5d41895aeb66ecbf1396 14752 ragnarok-base_01_amd64.deb
+Checksums-Sha256:
+ 9657acdd053bd13517553e96fc7b468474ee1efbf26b000a5cb12707db2152b7 6464 ragnarok-base_01_amd64.buildinfo
+ f68dc0afeea8792f4a116460d6a2c162527bd7fb7b5f33ae8928abda041f3fe2 14752 ragnarok-base_01_amd64.deb
+Files:
+ 6ac6f8774e6715d3ef62cf7ef4b62985 6464 base standard ragnarok-base_01_amd64.buildinfo
+ fdf5d73439f5b6352b067e72b66115f1 14752 base standard ragnarok-base_01_amd64.deb
