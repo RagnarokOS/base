@@ -23,39 +23,6 @@ Description: Debian base system miscellaneous files
  and the text of several common licenses in use on Debian systems.
 Original-Maintainer: Santiago Vila <sanvila@debian.org>
 
-Package: bash
-Version: 5.2.15-99ragnarok01
-Architecture: amd64
-Essential: yes
-Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 7155
-Pre-Depends: libc6 (>= 2.36), libtinfo6 (>= 6)
-Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
-Recommends: bash-completion (>= 20060301-0)
-Suggests: bash-doc
-Conflicts: bash-completion (<< 20060301-0)
-Replaces: bash-completion (<< 20060301-0), bash-doc (<= 2.05-1)
-Multi-Arch: foreign
-Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
-Priority: required
-Section: shells
-Filename: pool/main/b/bash/bash_5.2.15-99ragnarok01_amd64.deb
-Size: 1467296
-SHA256: d900baf4b049adc8555f0a4ac9b4f4ce078076da32d1f008671abe9da3ae2f82
-SHA1: 77bbae423a658ef5357e0b0f0edbc650d3ffcbae
-MD5sum: 4ab7a5ab4f1615db46a04897f9d9bbe4
-Description: GNU Bourne Again SHell
- Bash is an sh-compatible command language interpreter that executes
- commands read from the standard input or from a file.  Bash also
- incorporates useful features from the Korn and C shells (ksh and csh).
- .
- Bash is ultimately intended to be a conformant implementation of the
- IEEE POSIX Shell and Tools specification (IEEE Working Group 1003.2).
- .
- The Programmable Completion Code, by Ian Macdonald, is now found in
- the bash-completion package.
-Original-Maintainer: Matthias Klose <doko@debian.org>
-
 Package: bash-builtins
 Source: bash
 Version: 5.2.15-99ragnarok01
