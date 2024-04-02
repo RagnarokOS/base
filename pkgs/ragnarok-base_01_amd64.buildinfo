@@ -4,14 +4,14 @@ Binary: ragnarok-base
 Architecture: amd64
 Version: 01
 Checksums-Md5:
- fdf5d73439f5b6352b067e72b66115f1 14752 ragnarok-base_01_amd64.deb
+ cc3e2c4fae0af4935db808684ad88743 14864 ragnarok-base_01_amd64.deb
 Checksums-Sha1:
- 5a9015c50d95b36bb88f5d41895aeb66ecbf1396 14752 ragnarok-base_01_amd64.deb
+ f2452fc16743014ad49ce6af63b1712cd10c2565 14864 ragnarok-base_01_amd64.deb
 Checksums-Sha256:
- f68dc0afeea8792f4a116460d6a2c162527bd7fb7b5f33ae8928abda041f3fe2 14752 ragnarok-base_01_amd64.deb
+ c1c18cb4ae4b934ee20467d35141ade02b3dffc53dc7624f2907843046a8398e 14864 ragnarok-base_01_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 01 Apr 2024 13:18:17 -0400
+Build-Date: Tue, 02 Apr 2024 13:03:16 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:

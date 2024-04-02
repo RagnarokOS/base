@@ -118,16 +118,16 @@ Package: ragnarok-base
 Version: 01
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 77
-Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libopenbsd, adduser, openrcs
+Installed-Size: 79
+Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
 Filename: pool/main/r/ragnarok-base/ragnarok-base_01_amd64.deb
-Size: 14752
-SHA256: f68dc0afeea8792f4a116460d6a2c162527bd7fb7b5f33ae8928abda041f3fe2
-SHA1: 5a9015c50d95b36bb88f5d41895aeb66ecbf1396
-MD5sum: fdf5d73439f5b6352b067e72b66115f1
+Size: 14864
+SHA256: c1c18cb4ae4b934ee20467d35141ade02b3dffc53dc7624f2907843046a8398e
+SHA1: f2452fc16743014ad49ce6af63b1712cd10c2565
+MD5sum: cc3e2c4fae0af4935db808684ad88743
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also

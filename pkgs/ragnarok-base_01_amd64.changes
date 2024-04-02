@@ -15,11 +15,11 @@ Changes:
  .
    * Initial build of ragnarok-base.
 Checksums-Sha1:
- 5f761183140858954e200ff0980fd793e76d7120 6464 ragnarok-base_01_amd64.buildinfo
- 5a9015c50d95b36bb88f5d41895aeb66ecbf1396 14752 ragnarok-base_01_amd64.deb
+ 6ab437e99e4f74b9a4a903dd524657dedc18d4a3 6464 ragnarok-base_01_amd64.buildinfo
+ f2452fc16743014ad49ce6af63b1712cd10c2565 14864 ragnarok-base_01_amd64.deb
 Checksums-Sha256:
- 9657acdd053bd13517553e96fc7b468474ee1efbf26b000a5cb12707db2152b7 6464 ragnarok-base_01_amd64.buildinfo
- f68dc0afeea8792f4a116460d6a2c162527bd7fb7b5f33ae8928abda041f3fe2 14752 ragnarok-base_01_amd64.deb
+ d7d0327445de524ec14a113eaa175a2ccb7cbd139b663be96baf002498a9fafd 6464 ragnarok-base_01_amd64.buildinfo
+ c1c18cb4ae4b934ee20467d35141ade02b3dffc53dc7624f2907843046a8398e 14864 ragnarok-base_01_amd64.deb
 Files:
- 6ac6f8774e6715d3ef62cf7ef4b62985 6464 base standard ragnarok-base_01_amd64.buildinfo
- fdf5d73439f5b6352b067e72b66115f1 14752 base standard ragnarok-base_01_amd64.deb
+ 489ced6432791a494085dd8397d9be12 6464 base standard ragnarok-base_01_amd64.buildinfo
+ cc3e2c4fae0af4935db808684ad88743 14864 base standard ragnarok-base_01_amd64.deb
