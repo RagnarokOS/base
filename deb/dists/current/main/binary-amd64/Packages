@@ -57,7 +57,7 @@ Description: Static lib containing OpenBSD funcs
  systems.
 
 Package: mandoc
-Version: 1.14.6-99ragnarok01
+Version: 1.14.6-99ragnarok01-1
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 1409
@@ -65,11 +65,11 @@ Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
 Homepage: http://mdocml.bsd.lv/
 Priority: optional
 Section: doc
-Filename: pool/main/m/mandoc/mandoc_1.14.6-99ragnarok01_amd64.deb
-Size: 406040
-SHA256: e03aaa4e942ea0dbc1a27cb7e6939a29aa552b98776dcbd7a09cca2ebd3015fa
-SHA1: 23defb7cb4bd42d1ce6e0de3d57c4b57951a4b0b
-MD5sum: 7081f5c1e10e78b79112e411253dfb7e
+Filename: pool/main/m/mandoc/mandoc_1.14.6-99ragnarok01-1_amd64.deb
+Size: 406100
+SHA256: d65eccf0e8a1ada5640e8965fa9b28720898c4ce97047716f4bd60347b104a68
+SHA1: 4d7c72d290cf921e347da11dabc0367f774ff020
+MD5sum: 5038a1d922f1bceb7c4d0701898f2851
 Description: BSD manpage compiler toolset
  mandoc is a suite of tools compiling mdoc, the roff macro language of choice
  for BSD manual pages, and man, the predominant historical language for UNIX
@@ -81,19 +81,19 @@ Description: BSD manpage compiler toolset
  This is the default man implementation in Ragnarok.
 
 Package: oksh
-Version: 7.4-ragnarok01
+Version: 7.5-ragnarok01
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 382
+Installed-Size: 383
 Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
-Homepage: https://github.com/I-LeCorbeau/oksh
+Homepage: https://github.com/RagnarokOS/oksh
 Priority: required
 Section: shells
-Filename: pool/main/o/oksh/oksh_7.4-ragnarok01_amd64.deb
-Size: 183432
-SHA256: d782ca0ceaf4f9107a8552a3327449b9764932d26ff98c90236d069b593dce2b
-SHA1: 71bf9c20996b453b034ddecdf1eb73f28a609308
-MD5sum: c3efa59fc989a0c894fa92d3d334e850
+Filename: pool/main/o/oksh/oksh_7.5-ragnarok01_amd64.deb
+Size: 184396
+SHA256: 1ec46d9e9946e8a38d7170eed8ccb9ea64126716625f059b94793a18edc6d4b9
+SHA1: 4dde383eeea229a12d309abdcf063260af18c259
+MD5sum: b9ffba06bc4ac9a69b1b0252b0f00034
 Description: OpenBSD ksh.
  Portable version of OpenBSD's korn shell implementation.
  Used as the default login/interactive shell in Ragnarok.
@@ -115,19 +115,19 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01
+Version: 01-1
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
-Installed-Size: 79
+Installed-Size: 69
 Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01_amd64.deb
-Size: 14864
-SHA256: c1c18cb4ae4b934ee20467d35141ade02b3dffc53dc7624f2907843046a8398e
-SHA1: f2452fc16743014ad49ce6af63b1712cd10c2565
-MD5sum: cc3e2c4fae0af4935db808684ad88743
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-1_amd64.deb
+Size: 12732
+SHA256: 4ab0d716082dcac65c453a2180ac5c84153b522c9c379d7f1fe76d7b0fd9ba00
+SHA1: 0cd37db3c377fdf83af13c7f9cfd682567909896
+MD5sum: 27e858aac998aff195d6270e88fde08b
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
