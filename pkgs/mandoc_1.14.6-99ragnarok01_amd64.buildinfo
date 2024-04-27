@@ -2,22 +2,21 @@ Format: 1.0
 Source: mandoc
 Binary: mandoc mandoc-dbgsym
 Architecture: amd64
-Version: 1.14.6-99ragnarok01-1
+Version: 1.14.6-99ragnarok01
 Checksums-Md5:
- 6cc2b7c379a839138bfefa6d80b3e2ce 1090596 mandoc-dbgsym_1.14.6-99ragnarok01-1_amd64.deb
- 5038a1d922f1bceb7c4d0701898f2851 406100 mandoc_1.14.6-99ragnarok01-1_amd64.deb
+ 6fa8f6026fa016156643c2fd88a670f5 1137840 mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ b6b08893f06a136b9f38de056d28a892 415660 mandoc_1.14.6-99ragnarok01_amd64.deb
 Checksums-Sha1:
- 39324e6b19d2ac15774e4e96ca524a9b88719c74 1090596 mandoc-dbgsym_1.14.6-99ragnarok01-1_amd64.deb
- 4d7c72d290cf921e347da11dabc0367f774ff020 406100 mandoc_1.14.6-99ragnarok01-1_amd64.deb
+ 3d4902485e8d8f9f316666d3c8ed917ebb9e6395 1137840 mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ 7dc421465e932adee0fcb864648733c70a71c8f9 415660 mandoc_1.14.6-99ragnarok01_amd64.deb
 Checksums-Sha256:
- cd7cad4739fdca24309ce57a73f9460d5814ad373007bd337d2edb5dd33a5b70 1090596 mandoc-dbgsym_1.14.6-99ragnarok01-1_amd64.deb
- d65eccf0e8a1ada5640e8965fa9b28720898c4ce97047716f4bd60347b104a68 406100 mandoc_1.14.6-99ragnarok01-1_amd64.deb
+ 5f7e9de70c05719c9a2743fed553c8c09d46650498c86eface76e80f4bfa6c26 1137840 mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ 4012370b45f8716d9c6db4dbcb88a13151e8ace4ee15abd7816248abbed59591 415660 mandoc_1.14.6-99ragnarok01_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 24 Apr 2024 13:31:36 -0400
+Build-Date: Sat, 27 Apr 2024 14:56:02 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
- usr-local-has-programs
 Installed-Build-Depends:
  autoconf (= 2.71-3),
  automake (= 1:1.16.5-1.3),
@@ -94,16 +93,17 @@ Installed-Build-Depends:
  libdpkg-perl (= 1.21.22),
  libedit2 (= 3.1-20221030-2),
  libelf1 (= 0.188-2.1),
- libelogind0 (= 246.10-1debian1),
  libffi8 (= 3.4.4-1),
  libfile-stripnondeterminism-perl (= 1.13.1-1),
  libgc1 (= 1:8.2.2-3),
  libgcc-12-dev (= 12.2.0-14),
  libgcc-s1 (= 12.2.0-14),
+ libgcrypt20 (= 1.10.1-3),
  libgdbm-compat4 (= 1.23-3),
  libgdbm6 (= 1.23-3),
  libgmp10 (= 2:6.2.1+dfsg1-1.1),
  libgomp1 (= 12.2.0-14),
+ libgpg-error0 (= 1.46-1),
  libgprofng0 (= 2.40-2),
  libgssapi-krb5-2 (= 1.20.1-2+deb12u1),
  libicu72 (= 72.1-3),
@@ -116,6 +116,7 @@ Installed-Build-Depends:
  libkrb5support0 (= 1.20.1-2+deb12u1),
  libllvm17 (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  liblsan0 (= 12.2.0-14),
+ liblz4-1 (= 1.9.4-1),
  liblzma5 (= 5.4.1-0.2),
  libmagic-mgc (= 1:5.44-3),
  libmagic1 (= 1:5.44-3),
@@ -142,6 +143,7 @@ Installed-Build-Depends:
  libstdc++-12-dev (= 12.2.0-14),
  libstdc++6 (= 12.2.0-14),
  libsub-override-perl (= 0.09-4),
+ libsystemd0 (= 252.22-1~deb12u1),
  libtinfo6 (= 6.4-4),
  libtirpc-common (= 1.3.3+ds-1),
  libtirpc-dev (= 1.3.3+ds-1),
@@ -156,7 +158,7 @@ Installed-Build-Depends:
  libxml2 (= 2.9.14+dfsg-1.3~deb12u1),
  libz3-4 (= 4.8.12-3.1),
  libzstd1 (= 1.5.4+dfsg2-5),
- linux-libc-dev (= 6.1.85-ragnarok-amd64-1),
+ linux-libc-dev (= 6.1.85-1),
  llvm-17-linker-tools (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  login (= 1:4.13+dfsg1-1+b1),
  m4 (= 1.4.19-3),
@@ -183,8 +185,5 @@ Installed-Build-Depends:
  zlib1g-dev (= 1:1.2.13.dfsg-1)
 Environment:
  DEB_BUILD_OPTIONS="parallel=3"
- DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/home/user/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
- DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/user/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
- DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1713979816"
+ SOURCE_DATE_EPOCH="1714243100"

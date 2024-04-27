@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Sat, 27 Apr 2024 14:38:20 -0400
+Source: mandoc
+Binary: mandoc mandoc-dbgsym
+Architecture: amd64
+Version: 1.14.6-99ragnarok01
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ mandoc     - BSD manpage compiler toolset
+Changes:
+ mandoc (1.14.6-99ragnarok01) stable; urgency=medium
+ .
+   * Taking over full maintance of the package instead of relying
+     on the Debian version.
+Checksums-Sha1:
+ 3d4902485e8d8f9f316666d3c8ed917ebb9e6395 1137840 mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ 7dbe9bf3fb299b7210b18a5b1f08e8a190750137 5897 mandoc_1.14.6-99ragnarok01_amd64.buildinfo
+ 7dc421465e932adee0fcb864648733c70a71c8f9 415660 mandoc_1.14.6-99ragnarok01_amd64.deb
+Checksums-Sha256:
+ 5f7e9de70c05719c9a2743fed553c8c09d46650498c86eface76e80f4bfa6c26 1137840 mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ 50e68ac2a87c79c27bb4cba7a4b023de3f803fb8cad8a93244318f053aa52f52 5897 mandoc_1.14.6-99ragnarok01_amd64.buildinfo
+ 4012370b45f8716d9c6db4dbcb88a13151e8ace4ee15abd7816248abbed59591 415660 mandoc_1.14.6-99ragnarok01_amd64.deb
+Files:
+ 6fa8f6026fa016156643c2fd88a670f5 1137840 debug optional mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb
+ 45519d09982f34e36223b04ecf0144db 5897 doc optional mandoc_1.14.6-99ragnarok01_amd64.buildinfo
+ b6b08893f06a136b9f38de056d28a892 415660 doc optional mandoc_1.14.6-99ragnarok01_amd64.deb
