@@ -1,8 +1,8 @@
 Origin: Ragnarok
 Label: Ragnarok
 Suite: stable
-Codename: current
-Date: Thu, 02 May 2024 16:39:14 UTC
+Codename: 01
+Date: Mon, 13 May 2024 17:11:12 UTC
 Architectures: amd64
 Components: main
 Description: Ragnarok's deb package repository

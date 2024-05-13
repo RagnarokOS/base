@@ -4,8 +4,8 @@ Hash: SHA256
 Origin: Ragnarok
 Label: Ragnarok
 Suite: stable
-Codename: current
-Date: Thu, 02 May 2024 16:39:14 UTC
+Codename: 01
+Date: Mon, 13 May 2024 17:11:12 UTC
 Architectures: amd64
 Components: main
 Description: Ragnarok's deb package repository
@@ -23,8 +23,8 @@ SHA256:
  1ae212d46af020e6d5bae3bbb624b7d5999376ec3501da6f80a61fab3b28086c 132 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQQd07yWiPPvmI0+oCME+3X+t3o0LwUCZjPBwgAKCRAE+3X+t3o0
-L2xqAQD9QEfHrL3QXM8TsdnBIBGyIae6YrDUaF0XogROv9KGAAD/ZNCQYtzxYkSc
-rg6OkcD/xCDPV2wLn4Mt9IpxMbdW9ww=
-=aJjU
+iHUEARYIAB0WIQQd07yWiPPvmI0+oCME+3X+t3o0LwUCZkJJsAAKCRAE+3X+t3o0
+L0o2AQCCol7k1VdkAmrdfM8RSYO/wxN3u7tpt5N9NboIprmsogEA/QaEbO8FT0Yr
+jaPO3joQ0dvgbeoFyqARW+iOHTpHmAs=
+=ZtzX
 -----END PGP SIGNATURE-----
