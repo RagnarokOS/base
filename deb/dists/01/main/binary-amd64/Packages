@@ -1,5 +1,5 @@
 Package: base-files
-Version: 999+ragnarok01-1
+Version: 999+ragnarok01-2
 Architecture: amd64
 Essential: yes
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
@@ -11,11 +11,11 @@ Provides: base
 Multi-Arch: foreign
 Priority: required
 Section: admin
-Filename: pool/main/b/base-files/base-files_999+ragnarok01-1_amd64.deb
-Size: 70964
-SHA256: b49a948eca20ae922b540dcb319adce03194be833b11cbafddf5347eb29dd7ca
-SHA1: 8017a184994ab5b55c7ed07f57c3ea0e4a196699
-MD5sum: 364f55833c129dcbf72a9313054996a9
+Filename: pool/main/b/base-files/base-files_999+ragnarok01-2_amd64.deb
+Size: 70976
+SHA256: 121149cebb044af20ff5d8d7df1281b3467021f83e0559e8a9b4489edca07399
+SHA1: 38b0660e21d4fadcc4c48f40354cb7912fd008f5
+MD5sum: 22542add581a2dd556bbdc3a43d8940e
 Description: Debian base system miscellaneous files
  This package contains the basic filesystem hierarchy of a Debian system, and
  several important miscellaneous files, such as /etc/debian_version,
@@ -118,7 +118,7 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01-1
+Version: 01-2
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 79
@@ -126,11 +126,11 @@ Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbs
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01-1_amd64.deb
-Size: 14848
-SHA256: 790ed030dfa7a6399726350a0a67bfd0ee9eb15b6d320da572e4a7bd1ebdf832
-SHA1: c992feb9d7c7cf0067fd57fff0abc66f4e419d4a
-MD5sum: 1a8134ea6bb4d071a73998366ab5badf
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2_amd64.deb
+Size: 14876
+SHA256: 2437b0f291ea9259113e063b62de2f557133138e5a3ded8eff31cf5126724160
+SHA1: 53b20579d543887dc8c23b740e3434173b11ec7c
+MD5sum: 7beac8b2b8542c9d16cd75e8545f4ffe
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
