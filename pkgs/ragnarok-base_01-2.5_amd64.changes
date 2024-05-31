@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 30 May 2024 20:08:05 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.5
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.5) stable; urgency=medium
+ .
+   * Bug fix: removed /etc/default/grub from postinst script.
+Checksums-Sha1:
+ fd383fda0fca9676fffb508bc5b0d5bce896db55 5950 ragnarok-base_01-2.5_amd64.buildinfo
+ f5c3d97f5b75413a300474e0e1098fca02d0c05f 17564 ragnarok-base_01-2.5_amd64.deb
+Checksums-Sha256:
+ 4eb2bba6bf93816783ec4496846359f9f922bf6820f5f8e5fbb8a6570d02f959 5950 ragnarok-base_01-2.5_amd64.buildinfo
+ 5e48e625861efa310b534ef3c50050f96fe8284c52726f0c9634495061b62c0f 17564 ragnarok-base_01-2.5_amd64.deb
+Files:
+ 39b55e5c133f6a488d8c7ab3dbc7e4d2 5950 base standard ragnarok-base_01-2.5_amd64.buildinfo
+ cc327a40c6164b43c23c196f9e3b7785 17564 base standard ragnarok-base_01-2.5_amd64.deb
