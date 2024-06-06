@@ -56,6 +56,23 @@ Description: Static lib containing OpenBSD funcs
  This library is used in some programs found on Ragnarok
  systems.
 
+Package: man-recode
+Version: 2.11.2
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 258
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Filename: pool/main/m/man-recode/man-recode_2.11.2_amd64.deb
+Size: 82824
+SHA256: 68a11a43633bacd818dab7b9bbced80ece0d5ba2ee45d50b424ab90d10a92bf1
+SHA1: 17405bb3eb7731f6e8b6f7608746d12e90d54213
+MD5sum: 26a78e52b31eaffab5aea00e0bf2b435
+Description: man-recode
+ This is the man-recode binary, taken from man-db. Used
+ by dh_installman when building .deb packages.
+
 Package: mandoc
 Version: 1.14.6-99ragnarok01
 Architecture: amd64

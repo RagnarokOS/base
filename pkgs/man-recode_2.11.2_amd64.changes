@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 06 Jun 2024 11:19:31 -0400
+Source: man-recode
+Binary: man-recode
+Architecture: amd64
+Version: 2.11.2
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ man-recode - man-recode
+Changes:
+ man-recode (2.11.2) stable; urgency=medium
+ .
+   * Separate man-recode from man-db.
+Checksums-Sha1:
+ a89728b25195b4e6c92bda60edc226db48d151c3 5924 man-recode_2.11.2_amd64.buildinfo
+ 17405bb3eb7731f6e8b6f7608746d12e90d54213 82824 man-recode_2.11.2_amd64.deb
+Checksums-Sha256:
+ 65e9c0b2d32e98cc114b73e9f33a94b20099726a373e2a4bc4b7219892c458f6 5924 man-recode_2.11.2_amd64.buildinfo
+ 68a11a43633bacd818dab7b9bbced80ece0d5ba2ee45d50b424ab90d10a92bf1 82824 man-recode_2.11.2_amd64.deb
+Files:
+ 54caeb6f00fb4c2d1b4d5bb6ae6e6706 5924 doc optional man-recode_2.11.2_amd64.buildinfo
+ 26a78e52b31eaffab5aea00e0bf2b435 82824 doc optional man-recode_2.11.2_amd64.deb
