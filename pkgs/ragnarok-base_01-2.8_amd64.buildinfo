@@ -2,16 +2,16 @@ Format: 1.0
 Source: ragnarok-base
 Binary: ragnarok-base
 Architecture: amd64
-Version: 01-2.7
+Version: 01-2.8
 Checksums-Md5:
- c470e43d8ed79140eda6e0f16a90b28d 17768 ragnarok-base_01-2.7_amd64.deb
+ 9cd6b177dbc805a2a988210060e3dc6c 17796 ragnarok-base_01-2.8_amd64.deb
 Checksums-Sha1:
- e5e9ce0424ba39ae370020ae49f192e75391ccf2 17768 ragnarok-base_01-2.7_amd64.deb
+ ec441ddae0c42892ce2503fbc0e71c1f3ca1424d 17796 ragnarok-base_01-2.8_amd64.deb
 Checksums-Sha256:
- ba660da2eb4458d2ecc3e5693637d073a8b08ca09ae75e75d2da27b82c44a51b 17768 ragnarok-base_01-2.7_amd64.deb
+ 423b04400976278e3ddff0a76113fab8489c25b05319363d0228f3c9afc5c0a4 17796 ragnarok-base_01-2.8_amd64.deb
 Build-Origin: Ragnarok
 Build-Architecture: amd64
-Build-Date: Thu, 13 Jun 2024 14:28:04 -0400
+Build-Date: Thu, 13 Jun 2024 15:25:39 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-programs
@@ -181,4 +181,4 @@ Environment:
  DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/mnt/build/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
  DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1718303115"
+ SOURCE_DATE_EPOCH="1718306680"
