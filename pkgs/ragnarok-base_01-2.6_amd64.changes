@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 13 Jun 2024 13:20:22 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.6
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.6) stable; urgency=medium
+ .
+   * Removed policy-rcd-declarative-deny-all from depends.
+   * Added apt-utils to depends.
+Checksums-Sha1:
+ f56ecd65369b9315aba7e28383000bdaf6b4893c 5861 ragnarok-base_01-2.6_amd64.buildinfo
+ 27161176b745a3f322aef0076c8b217c20e9506a 17616 ragnarok-base_01-2.6_amd64.deb
+Checksums-Sha256:
+ 6c78ad4ee8c510f6c23ead4d84ef051b7b51b20190399953db0f4c5eb50359b1 5861 ragnarok-base_01-2.6_amd64.buildinfo
+ b71e7666a72e4ea8a955a961ad3bf09dab0f3b53eac7941831b089e1235386ad 17616 ragnarok-base_01-2.6_amd64.deb
+Files:
+ 1b67ccc2341f23e2b2ee9a9435e151bb 5861 base standard ragnarok-base_01-2.6_amd64.buildinfo
+ 485c261db9ea2b2a64db34cacce2380c 17616 base standard ragnarok-base_01-2.6_amd64.deb

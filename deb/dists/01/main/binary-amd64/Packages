@@ -135,19 +135,19 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01-2.5
+Version: 01-2.6
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 83
-Depends: policy-rcd-declarative-deny-all, oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs, wget, ca-certificates, lsb-release
+Depends: oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs, wget, ca-certificates, lsb-release, apt-utils
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.5_amd64.deb
-Size: 17564
-SHA256: 5e48e625861efa310b534ef3c50050f96fe8284c52726f0c9634495061b62c0f
-SHA1: f5c3d97f5b75413a300474e0e1098fca02d0c05f
-MD5sum: cc327a40c6164b43c23c196f9e3b7785
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.6_amd64.deb
+Size: 17616
+SHA256: b71e7666a72e4ea8a955a961ad3bf09dab0f3b53eac7941831b089e1235386ad
+SHA1: 27161176b745a3f322aef0076c8b217c20e9506a
+MD5sum: 485c261db9ea2b2a64db34cacce2380c
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
@@ -155,19 +155,19 @@ Description: files for Ragnarok
  by the base system.
 
 Package: ragnarok-devel
-Version: 01
+Version: 01.1
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 14
-Depends: build-essential, libllvm17, llvm-17, llvm-17-dev, llvm-17-runtime, clang-17, clang-tools-17, libclang-common-17-dev, libclang-17-dev, libclang1-17, clang-format-17, python3-clang-17, clang-tidy-17, libclang-rt-17-dev, libpolly-17-dev, libfuzzer-17-dev, lldb-17, lld-17, libc++-17-dev, libc++abi-17-dev, libomp-17-dev, libunwind-17-dev, libmlir-17-dev, flang-17
+Depends: build-essential, libllvm17, llvm-17, llvm-17-dev, llvm-17-runtime, clang-17, clang-tools-17, libclang-common-17-dev, libclang-17-dev, libclang1-17, clang-format-17, python3-clang-17, clang-tidy-17, libclang-rt-17-dev, libpolly-17-dev, libfuzzer-17-dev, lldb-17, lld-17, libc++-17-dev, libc++abi-17-dev, libomp-17-dev, libunwind-17-dev, libmlir-17-dev, flang-17, man-recode
 Multi-Arch: foreign
 Priority: optional
 Section: devel
-Filename: pool/main/r/ragnarok-devel/ragnarok-devel_01_amd64.deb
-Size: 3136
-SHA256: 0050ba797ec0aeedbb03176b81ae7f05d410d993e0e4efdffaed991299dc13a5
-SHA1: 960cd2f116bc99a4963c79bf4be763449ed127b1
-MD5sum: d4b3690d7be2c3deb6235233c894df68
+Filename: pool/main/r/ragnarok-devel/ragnarok-devel_01.1_amd64.deb
+Size: 3196
+SHA256: cc3d558e474c8875ffeb6562a8e3927d4a00e48892b9d6e96705a75c31b1f1a9
+SHA1: f8eb90b8d7ab1880d23297cf2ab86446258466db
+MD5sum: cf0b02a958cf3156c8acb956f80e9c22
 Description: meta-package for Ragnarok's devel set.
  This is a meta-package which depends on all programs that
  are needed for Ragnarok's devel set.

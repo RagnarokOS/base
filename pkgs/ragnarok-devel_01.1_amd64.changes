@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 13 Jun 2024 13:17:09 -0400
+Source: ragnarok-devel
+Binary: ragnarok-devel
+Architecture: amd64
+Version: 01.1
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-devel - meta-package for Ragnarok's devel set.
+Changes:
+ ragnarok-devel (01.1) stable; urgency=medium
+ .
+   * Added the man-recode package as dependency.
+Checksums-Sha1:
+ 95c394af510b95ade8a8e45f77ea95a6acd894e3 5885 ragnarok-devel_01.1_amd64.buildinfo
+ f8eb90b8d7ab1880d23297cf2ab86446258466db 3196 ragnarok-devel_01.1_amd64.deb
+Checksums-Sha256:
+ e24670bcc3fc7be993e305745aff8d957b380f805208493e3e6c3014badc328f 5885 ragnarok-devel_01.1_amd64.buildinfo
+ cc3d558e474c8875ffeb6562a8e3927d4a00e48892b9d6e96705a75c31b1f1a9 3196 ragnarok-devel_01.1_amd64.deb
+Files:
+ 779882259da77d87d13988131acdbdfa 5885 devel optional ragnarok-devel_01.1_amd64.buildinfo
+ cf0b02a958cf3156c8acb956f80e9c22 3196 devel optional ragnarok-devel_01.1_amd64.deb
