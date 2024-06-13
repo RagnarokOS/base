@@ -135,7 +135,7 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01-2.6
+Version: 01-2.7
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 83
@@ -143,11 +143,11 @@ Depends: oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sy
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.6_amd64.deb
-Size: 17616
-SHA256: b71e7666a72e4ea8a955a961ad3bf09dab0f3b53eac7941831b089e1235386ad
-SHA1: 27161176b745a3f322aef0076c8b217c20e9506a
-MD5sum: 485c261db9ea2b2a64db34cacce2380c
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.7_amd64.deb
+Size: 17768
+SHA256: ba660da2eb4458d2ecc3e5693637d073a8b08ca09ae75e75d2da27b82c44a51b
+SHA1: e5e9ce0424ba39ae370020ae49f192e75391ccf2
+MD5sum: c470e43d8ed79140eda6e0f16a90b28d
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
