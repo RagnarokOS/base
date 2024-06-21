@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 19 Jun 2024 19:44:40 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.9
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.9) stable; urgency=medium
+ .
+   * Added apparmor-utils and eject packages.
+Checksums-Sha1:
+ 8dd4f3800449f200f4383cf62824126aa4c2813d 5861 ragnarok-base_01-2.9_amd64.buildinfo
+ cc27aa69fc231b991975dc5c7c401a9b1f43ada0 17824 ragnarok-base_01-2.9_amd64.deb
+Checksums-Sha256:
+ 7f00fdf76ec05fcf030dae4ccc5589ec0154c3b4f10c6a83945b99a176d3aed7 5861 ragnarok-base_01-2.9_amd64.buildinfo
+ 94c4b61e22a65df3b6c05b0ea2cb0295d504becf33cc756e4b7d0f6382f70bbc 17824 ragnarok-base_01-2.9_amd64.deb
+Files:
+ 740b4d65c84e9efa87b579f327ac774b 5861 base standard ragnarok-base_01-2.9_amd64.buildinfo
+ 40ad0d59bf82c9b0ee64992c6e045a11 17824 base standard ragnarok-base_01-2.9_amd64.deb
