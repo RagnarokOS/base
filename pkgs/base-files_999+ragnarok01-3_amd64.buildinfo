@@ -2,18 +2,19 @@ Format: 1.0
 Source: base-files
 Binary: base-files
 Architecture: amd64
-Version: 999+ragnarok01-2
+Version: 999+ragnarok01-3
 Checksums-Md5:
- 22542add581a2dd556bbdc3a43d8940e 70976 base-files_999+ragnarok01-2_amd64.deb
+ a1e32538286bf0311a55608a522e112b 71016 base-files_999+ragnarok01-3_amd64.deb
 Checksums-Sha1:
- 38b0660e21d4fadcc4c48f40354cb7912fd008f5 70976 base-files_999+ragnarok01-2_amd64.deb
+ e551111986e3e53a6cebf5ccded53c23e5987e9e 71016 base-files_999+ragnarok01-3_amd64.deb
 Checksums-Sha256:
- 121149cebb044af20ff5d8d7df1281b3467021f83e0559e8a9b4489edca07399 70976 base-files_999+ragnarok01-2_amd64.deb
-Build-Origin: Debian
+ a02b5971b82e16d33060f404525a32afbb4bc9a056d954164e7fe65a54c3af59 71016 base-files_999+ragnarok01-3_amd64.deb
+Build-Origin: Ragnarok
 Build-Architecture: amd64
-Build-Date: Tue, 14 May 2024 11:32:23 -0400
+Build-Date: Sat, 29 Jun 2024 13:22:48 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
+ usr-local-has-programs
 Installed-Build-Depends:
  autoconf (= 2.71-3),
  automake (= 1:1.16.5-1.3),
@@ -25,7 +26,6 @@ Installed-Build-Depends:
  binutils (= 2.40-2),
  binutils-common (= 2.40-2),
  binutils-x86-64-linux-gnu (= 2.40-2),
- bsdextrautils (= 2.38.1-5+deb12u1),
  bsdutils (= 1:2.38.1-5+deb12u1),
  build-essential (= 12.9),
  bzip2 (= 1.0.8-5+b1),
@@ -53,7 +53,6 @@ Installed-Build-Depends:
  gettext (= 0.21-12),
  gettext-base (= 0.21-12),
  grep (= 3.8-5),
- groff-base (= 1.22.4-10),
  gzip (= 1.12-1),
  hostname (= 3.23+nmu1),
  init-system-helpers (= 1.65.2),
@@ -90,17 +89,17 @@ Installed-Build-Depends:
  libdpkg-perl (= 1.21.22),
  libedit2 (= 3.1-20221030-2),
  libelf1 (= 0.188-2.1),
+ libelogind0 (= 246.10-1debian1),
  libffi8 (= 3.4.4-1),
+ libfile-find-rule-perl (= 0.34-3),
  libfile-stripnondeterminism-perl (= 1.13.1-1),
  libgc1 (= 1:8.2.2-3),
  libgcc-12-dev (= 12.2.0-14),
  libgcc-s1 (= 12.2.0-14),
- libgcrypt20 (= 1.10.1-3),
  libgdbm-compat4 (= 1.23-3),
  libgdbm6 (= 1.23-3),
  libgmp10 (= 2:6.2.1+dfsg1-1.1),
  libgomp1 (= 12.2.0-14),
- libgpg-error0 (= 1.46-1),
  libgprofng0 (= 2.40-2),
  libgssapi-krb5-2 (= 1.20.1-2+deb12u1),
  libicu72 (= 72.1-3),
@@ -113,7 +112,6 @@ Installed-Build-Depends:
  libkrb5support0 (= 1.20.1-2+deb12u1),
  libllvm17 (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  liblsan0 (= 12.2.0-14),
- liblz4-1 (= 1.9.4-1),
  liblzma5 (= 5.4.1-0.2),
  libmagic-mgc (= 1:5.44-3),
  libmagic1 (= 1:5.44-3),
@@ -123,6 +121,7 @@ Installed-Build-Depends:
  libmpfr6 (= 4.2.0-1),
  libnsl-dev (= 1.3.0-2),
  libnsl2 (= 1.3.0-2),
+ libnumber-compare-perl (= 0.03-3),
  libobjc-12-dev (= 12.2.0-14),
  libobjc4 (= 12.2.0-14),
  libpam-modules (= 1.5.2-6+deb12u1),
@@ -131,16 +130,14 @@ Installed-Build-Depends:
  libpam0g (= 1.5.2-6+deb12u1),
  libpcre2-8-0 (= 10.42-1),
  libperl5.36 (= 5.36.0-7+deb12u1),
- libpipeline1 (= 1.5.7-1),
  libquadmath0 (= 12.2.0-14),
- libseccomp2 (= 2.5.4-1+b3),
  libselinux1 (= 3.4-1+b6),
  libsmartcols1 (= 2.38.1-5+deb12u1),
  libssl3 (= 3.0.11-1~deb12u2),
  libstdc++-12-dev (= 12.2.0-14),
  libstdc++6 (= 12.2.0-14),
  libsub-override-perl (= 0.09-4),
- libsystemd0 (= 252.22-1~deb12u1),
+ libtext-glob-perl (= 0.11-3),
  libtinfo6 (= 6.4-4),
  libtirpc-common (= 1.3.3+ds-1),
  libtirpc-dev (= 1.3.3+ds-1),
@@ -148,19 +145,18 @@ Installed-Build-Depends:
  libtool (= 2.4.7-5),
  libtsan2 (= 12.2.0-14),
  libubsan1 (= 12.2.0-14),
- libuchardet0 (= 0.0.7-1),
  libudev1 (= 252.22-1~deb12u1),
  libunistring2 (= 1.0-2),
  libuuid1 (= 2.38.1-5+deb12u1),
  libxml2 (= 2.9.14+dfsg-1.3~deb12u1),
  libz3-4 (= 4.8.12-3.1),
  libzstd1 (= 1.5.4+dfsg2-5),
- linux-libc-dev (= 6.1.90-1),
+ linux-libc-dev (= 6.1.90-ragnarok-amd64-1),
  llvm-17-linker-tools (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  login (= 1:4.13+dfsg1-1+b1),
  m4 (= 1.4.19-3),
  make (= 4.3-4.1),
- man-db (= 2.11.2-2),
+ man-db (= 999+ragnarok01),
  mawk (= 1.3.4.20200120-3.1),
  ncurses-base (= 6.4-4),
  ncurses-bin (= 6.4-4),
@@ -174,15 +170,15 @@ Installed-Build-Depends:
  sensible-utils (= 0.0.17+nmu1),
  sysvinit-utils (= 3.06-4),
  tar (= 1.34+dfsg-1.2+deb12u1),
- usr-is-merged (= 37~deb12u1),
+ usrmerge (= 37~deb12u1),
  util-linux (= 2.38.1-5+deb12u1),
  util-linux-extra (= 2.38.1-5+deb12u1),
  xz-utils (= 5.4.1-0.2),
  zlib1g (= 1:1.2.13.dfsg-1)
 Environment:
- DEB_BUILD_OPTIONS="parallel=3"
- DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/home/i/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
- DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/i/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_BUILD_OPTIONS="parallel=2"
+ DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
  DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1715700681"
+ SOURCE_DATE_EPOCH="1719681680"
