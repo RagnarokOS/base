@@ -2,16 +2,16 @@ Format: 1.0
 Source: ragnarok-base
 Binary: ragnarok-base
 Architecture: amd64
-Version: 01-2.9
+Version: 01-2.10
 Checksums-Md5:
- 40ad0d59bf82c9b0ee64992c6e045a11 17824 ragnarok-base_01-2.9_amd64.deb
+ 93e5b7a34671bfb2812719e8e63334a8 17872 ragnarok-base_01-2.10_amd64.deb
 Checksums-Sha1:
- cc27aa69fc231b991975dc5c7c401a9b1f43ada0 17824 ragnarok-base_01-2.9_amd64.deb
+ 19d932934aeb73adddfe9177d796c363d392dbe3 17872 ragnarok-base_01-2.10_amd64.deb
 Checksums-Sha256:
- 94c4b61e22a65df3b6c05b0ea2cb0295d504becf33cc756e4b7d0f6382f70bbc 17824 ragnarok-base_01-2.9_amd64.deb
+ 5e5d8d2cfddbbebf6d24b82fec606fea5977cce280c5665177dfdd542d473aae 17872 ragnarok-base_01-2.10_amd64.deb
 Build-Origin: Ragnarok
 Build-Architecture: amd64
-Build-Date: Fri, 21 Jun 2024 16:58:26 -0400
+Build-Date: Sun, 30 Jun 2024 13:34:50 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-programs
@@ -20,9 +20,9 @@ Installed-Build-Depends:
  automake (= 1:1.16.5-1.3),
  autopoint (= 0.21-12),
  autotools-dev (= 20220109.1),
- base-files (= 999+ragnarok01-2),
+ base-files (= 999+ragnarok01-3),
  base-passwd (= 3.6.1),
- bash (= 5.2.15-2+b2),
+ bash (= 5.2.15-2+b7),
  binutils (= 2.40-2),
  binutils-common (= 2.40-2),
  binutils-x86-64-linux-gnu (= 2.40-2),
@@ -133,7 +133,7 @@ Installed-Build-Depends:
  libquadmath0 (= 12.2.0-14),
  libselinux1 (= 3.4-1+b6),
  libsmartcols1 (= 2.38.1-5+deb12u1),
- libssl3 (= 3.0.11-1~deb12u2),
+ libssl3 (= 3.0.13-1~deb12u1),
  libstdc++-12-dev (= 12.2.0-14),
  libstdc++6 (= 12.2.0-14),
  libsub-override-perl (= 0.09-4),
@@ -142,16 +142,16 @@ Installed-Build-Depends:
  libtirpc-common (= 1.3.3+ds-1),
  libtirpc-dev (= 1.3.3+ds-1),
  libtirpc3 (= 1.3.3+ds-1),
- libtool (= 2.4.7-5),
+ libtool (= 2.4.7-7~deb12u1),
  libtsan2 (= 12.2.0-14),
  libubsan1 (= 12.2.0-14),
- libudev1 (= 252.22-1~deb12u1),
+ libudev1 (= 252.26-1~deb12u2),
  libunistring2 (= 1.0-2),
  libuuid1 (= 2.38.1-5+deb12u1),
  libxml2 (= 2.9.14+dfsg-1.3~deb12u1),
  libz3-4 (= 4.8.12-3.1),
  libzstd1 (= 1.5.4+dfsg2-5),
- linux-libc-dev (= 6.1.90-ragnarok-amd64-1),
+ linux-libc-dev (= 6.1.94-ragnarok-amd64-1),
  llvm-17-linker-tools (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  login (= 1:4.13+dfsg1-1+b1),
  m4 (= 1.4.19-3),
@@ -176,9 +176,9 @@ Installed-Build-Depends:
  xz-utils (= 5.4.1-0.2),
  zlib1g (= 1:1.2.13.dfsg-1)
 Environment:
- DEB_BUILD_OPTIONS="parallel=3"
- DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/mnt/build/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
- DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/mnt/build/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_BUILD_OPTIONS="parallel=2"
+ DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/.local/src/ragnarok/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/.local/src/ragnarok/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
  DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1718840680"
+ SOURCE_DATE_EPOCH="1719768826"
