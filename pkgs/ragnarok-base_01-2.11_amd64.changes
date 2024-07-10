@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 10 Jul 2024 11:41:01 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.11
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.11) stable; urgency=medium
+ .
+   * The afterboot(8) manual was updated to document cron and kernupd.
+   * New "security-check" cronjob added to cron.weekly.
+Checksums-Sha1:
+ 440a05f19088430991aef15305f5a462cf2199a0 5923 ragnarok-base_01-2.11_amd64.buildinfo
+ f9630922b09e7edad5c98251d811bb5a9a772d41 19044 ragnarok-base_01-2.11_amd64.deb
+Checksums-Sha256:
+ becc48f607fb9a966a4b392c1930086d283185043e5325f1827c48048d7621bf 5923 ragnarok-base_01-2.11_amd64.buildinfo
+ 323900db2a3564c8c6a5b3feec5fee7af1ff9abfc462988966da04ccee833539 19044 ragnarok-base_01-2.11_amd64.deb
+Files:
+ ce690b38b6af0eeea29fc77b862094c6 5923 base standard ragnarok-base_01-2.11_amd64.buildinfo
+ be967c5c35c9fcbae031d2f4454844cc 19044 base standard ragnarok-base_01-2.11_amd64.deb

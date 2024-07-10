@@ -2,16 +2,16 @@ Format: 1.0
 Source: ragnarok-base
 Binary: ragnarok-base
 Architecture: amd64
-Version: 01-2.10
+Version: 01-2.11
 Checksums-Md5:
- 93e5b7a34671bfb2812719e8e63334a8 17872 ragnarok-base_01-2.10_amd64.deb
+ be967c5c35c9fcbae031d2f4454844cc 19044 ragnarok-base_01-2.11_amd64.deb
 Checksums-Sha1:
- 19d932934aeb73adddfe9177d796c363d392dbe3 17872 ragnarok-base_01-2.10_amd64.deb
+ f9630922b09e7edad5c98251d811bb5a9a772d41 19044 ragnarok-base_01-2.11_amd64.deb
 Checksums-Sha256:
- 5e5d8d2cfddbbebf6d24b82fec606fea5977cce280c5665177dfdd542d473aae 17872 ragnarok-base_01-2.10_amd64.deb
+ 323900db2a3564c8c6a5b3feec5fee7af1ff9abfc462988966da04ccee833539 19044 ragnarok-base_01-2.11_amd64.deb
 Build-Origin: Ragnarok
 Build-Architecture: amd64
-Build-Date: Sun, 30 Jun 2024 13:34:50 -0400
+Build-Date: Wed, 10 Jul 2024 11:54:32 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-programs
@@ -101,15 +101,15 @@ Installed-Build-Depends:
  libgmp10 (= 2:6.2.1+dfsg1-1.1),
  libgomp1 (= 12.2.0-14),
  libgprofng0 (= 2.40-2),
- libgssapi-krb5-2 (= 1.20.1-2+deb12u1),
+ libgssapi-krb5-2 (= 1.20.1-2+deb12u2),
  libicu72 (= 72.1-3),
  libisl23 (= 0.25-1.1),
  libitm1 (= 12.2.0-14),
  libjansson4 (= 2.14-2),
- libk5crypto3 (= 1.20.1-2+deb12u1),
+ libk5crypto3 (= 1.20.1-2+deb12u2),
  libkeyutils1 (= 1.6.3-2),
- libkrb5-3 (= 1.20.1-2+deb12u1),
- libkrb5support0 (= 1.20.1-2+deb12u1),
+ libkrb5-3 (= 1.20.1-2+deb12u2),
+ libkrb5support0 (= 1.20.1-2+deb12u2),
  libllvm17 (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  liblsan0 (= 12.2.0-14),
  liblzma5 (= 5.4.1-0.2),
@@ -181,4 +181,4 @@ Environment:
  DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/.local/src/ragnarok/src/base=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
  DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1719768826"
+ SOURCE_DATE_EPOCH="1720626061"
