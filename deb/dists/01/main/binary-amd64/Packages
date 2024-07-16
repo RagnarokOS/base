@@ -172,6 +172,24 @@ Description: meta-package for Ragnarok's devel set.
  This is a meta-package which depends on all programs that
  are needed for Ragnarok's devel set.
 
+Package: ragnarok-virt
+Version: 01
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 13
+Depends: qemu-system, qemu-utils, libvirt-clients, libvirt-daemon-system, libvirt-daemon-system-sysv, virtinst, ovmf
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Filename: pool/main/r/ragnarok-virt/ragnarok-virt_01_amd64.deb
+Size: 2992
+SHA256: d6b324de9733fb396a021cb6a31a2264c4a7c57688d550f03e4eddc451ac6b4a
+SHA1: ea4925d58b5b7aabc0a2fb540f2db52c4ea111bc
+MD5sum: 24fa608cf481e65ba8cfd35c6c0b0f73
+Description: meta-package for Ragnarok's virt set.
+ This is a meta-package which depends on all programs that
+ are needed for Ragnarok's virt set.
+
 Package: yacc
 Version: 99ragnarok01
 Architecture: amd64

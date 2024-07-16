@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 16 Jul 2024 10:59:52 -0400
+Source: ragnarok-virt
+Binary: ragnarok-virt
+Architecture: amd64
+Version: 01
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-virt - meta-package for Ragnarok's virt set.
+Changes:
+ ragnarok-virt (01) stable; urgency=medium
+ .
+   * Initial build of ragnarok-virt set.
+Checksums-Sha1:
+ 4192348716758128d920dbec805f2b8823833c93 5942 ragnarok-virt_01_amd64.buildinfo
+ ea4925d58b5b7aabc0a2fb540f2db52c4ea111bc 2992 ragnarok-virt_01_amd64.deb
+Checksums-Sha256:
+ ac061946bf4501526fd6337fab29c5684724ffbc65552df66d90c30e5a11b3f8 5942 ragnarok-virt_01_amd64.buildinfo
+ d6b324de9733fb396a021cb6a31a2264c4a7c57688d550f03e4eddc451ac6b4a 2992 ragnarok-virt_01_amd64.deb
+Files:
+ 7d5b3856f7a8a942c49238414271b683 5942 admin optional ragnarok-virt_01_amd64.buildinfo
+ 24fa608cf481e65ba8cfd35c6c0b0f73 2992 admin optional ragnarok-virt_01_amd64.deb
