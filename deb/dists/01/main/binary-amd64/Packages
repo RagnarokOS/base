@@ -40,6 +40,23 @@ MD5sum: 28af23382101db24ff55ffd06cfa2eda
 Description: OpenBSD's ed.
  This is the ed version used in Ragnarok.
 
+Package: hardened-malloc
+Version: 12
+Architecture: amd64
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 308
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 4.9)
+Homepage: https://github.com/I-LeCorbeau/hardened-malloc
+Priority: optional
+Section: libs
+Filename: pool/main/h/hardened-malloc/hardened-malloc_12_amd64.deb
+Size: 204384
+SHA256: 9c28c4abeab9a6aacd4a21a8e0f2eb848b6d31e489fed99f923b4660fae3e011
+SHA1: a4116b38bfe23e8b064b4a76826504799641f730
+MD5sum: 5410dded5d5ee9d45c0626b3d1692912
+Description: GrapheneOS' hardened_malloc
+ The hardnened memory allocator from GrapheneOS.
+
 Package: libopenbsd
 Version: 01
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>

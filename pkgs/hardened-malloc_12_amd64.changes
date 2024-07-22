@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 22 Jul 2024 11:40:25 -0400
+Source: hardened-malloc
+Binary: hardened-malloc hardened-malloc-dbgsym
+Architecture: amd64
+Version: 12
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ hardened-malloc - GrapheneOS' hardened_malloc
+Changes:
+ hardened-malloc (12) stable; urgency=medium
+ .
+   * ragnarok01 build
+Checksums-Sha1:
+ 018abe1c4f2b0865d9f0dd70715f880573c8af19 123424 hardened-malloc-dbgsym_12_amd64.deb
+ 1ff1b29016f031d763d431b1733cbb2b2e7e1047 6224 hardened-malloc_12_amd64.buildinfo
+ a4116b38bfe23e8b064b4a76826504799641f730 204384 hardened-malloc_12_amd64.deb
+Checksums-Sha256:
+ 5ade5128da8f10b4fb0dea9aaf0153f5e49306b06046d4dec05445f83750fe61 123424 hardened-malloc-dbgsym_12_amd64.deb
+ 401995bb9f9186a00fb04bd996f49d7a1a68a195f6641187e3daf0901bd2be53 6224 hardened-malloc_12_amd64.buildinfo
+ 9c28c4abeab9a6aacd4a21a8e0f2eb848b6d31e489fed99f923b4660fae3e011 204384 hardened-malloc_12_amd64.deb
+Files:
+ a05637551fb97ffcdbd4dd8ceea1afd1 123424 debug optional hardened-malloc-dbgsym_12_amd64.deb
+ 5ca91055e2cc16083a95f4a1ee6aacd9 6224 libs optional hardened-malloc_12_amd64.buildinfo
+ 5410dded5d5ee9d45c0626b3d1692912 204384 libs optional hardened-malloc_12_amd64.deb
