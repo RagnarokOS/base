@@ -2,16 +2,16 @@ Format: 1.0
 Source: base-files
 Binary: base-files
 Architecture: amd64
-Version: 999+ragnarok01-3
+Version: 999+ragnarok01-4
 Checksums-Md5:
- a1e32538286bf0311a55608a522e112b 71016 base-files_999+ragnarok01-3_amd64.deb
+ b4bc6f276f17a6577118cef9d32d82a1 71008 base-files_999+ragnarok01-4_amd64.deb
 Checksums-Sha1:
- e551111986e3e53a6cebf5ccded53c23e5987e9e 71016 base-files_999+ragnarok01-3_amd64.deb
+ 1fca1544fbd617c44ae0b1d162a93935c4e77529 71008 base-files_999+ragnarok01-4_amd64.deb
 Checksums-Sha256:
- a02b5971b82e16d33060f404525a32afbb4bc9a056d954164e7fe65a54c3af59 71016 base-files_999+ragnarok01-3_amd64.deb
+ ab60dda8e92eb98d16cafe96663fdae5a2380926b89dbd5a806124b8f57c5a0b 71008 base-files_999+ragnarok01-4_amd64.deb
 Build-Origin: Ragnarok
 Build-Architecture: amd64
-Build-Date: Sat, 29 Jun 2024 13:22:48 -0400
+Build-Date: Sat, 31 Aug 2024 11:05:49 -0400
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-programs
@@ -20,9 +20,9 @@ Installed-Build-Depends:
  automake (= 1:1.16.5-1.3),
  autopoint (= 0.21-12),
  autotools-dev (= 20220109.1),
- base-files (= 999+ragnarok01-2),
+ base-files (= 999+ragnarok01-3),
  base-passwd (= 3.6.1),
- bash (= 5.2.15-2+b2),
+ bash (= 5.2.15-2+b7),
  binutils (= 2.40-2),
  binutils-common (= 2.40-2),
  binutils-x86-64-linux-gnu (= 2.40-2),
@@ -68,10 +68,10 @@ Installed-Build-Depends:
  libblkid1 (= 2.38.1-5+deb12u1),
  libbsd0 (= 0.11.7-2),
  libbz2-1.0 (= 1.0.8-5+b1),
- libc-bin (= 2.36-9+deb12u7),
- libc-dev-bin (= 2.36-9+deb12u7),
- libc6 (= 2.36-9+deb12u7),
- libc6-dev (= 2.36-9+deb12u7),
+ libc-bin (= 2.36-9+deb12u8),
+ libc-dev-bin (= 2.36-9+deb12u8),
+ libc6 (= 2.36-9+deb12u8),
+ libc6-dev (= 2.36-9+deb12u8),
  libcap-ng0 (= 0.8.3-1+b3),
  libcap2 (= 1:2.66-4),
  libcc1-0 (= 12.2.0-14),
@@ -101,15 +101,15 @@ Installed-Build-Depends:
  libgmp10 (= 2:6.2.1+dfsg1-1.1),
  libgomp1 (= 12.2.0-14),
  libgprofng0 (= 2.40-2),
- libgssapi-krb5-2 (= 1.20.1-2+deb12u1),
+ libgssapi-krb5-2 (= 1.20.1-2+deb12u2),
  libicu72 (= 72.1-3),
  libisl23 (= 0.25-1.1),
  libitm1 (= 12.2.0-14),
  libjansson4 (= 2.14-2),
- libk5crypto3 (= 1.20.1-2+deb12u1),
+ libk5crypto3 (= 1.20.1-2+deb12u2),
  libkeyutils1 (= 1.6.3-2),
- libkrb5-3 (= 1.20.1-2+deb12u1),
- libkrb5support0 (= 1.20.1-2+deb12u1),
+ libkrb5-3 (= 1.20.1-2+deb12u2),
+ libkrb5support0 (= 1.20.1-2+deb12u2),
  libllvm17 (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  liblsan0 (= 12.2.0-14),
  liblzma5 (= 5.4.1-0.2),
@@ -133,7 +133,7 @@ Installed-Build-Depends:
  libquadmath0 (= 12.2.0-14),
  libselinux1 (= 3.4-1+b6),
  libsmartcols1 (= 2.38.1-5+deb12u1),
- libssl3 (= 3.0.11-1~deb12u2),
+ libssl3 (= 3.0.14-1~deb12u1),
  libstdc++-12-dev (= 12.2.0-14),
  libstdc++6 (= 12.2.0-14),
  libsub-override-perl (= 0.09-4),
@@ -142,16 +142,16 @@ Installed-Build-Depends:
  libtirpc-common (= 1.3.3+ds-1),
  libtirpc-dev (= 1.3.3+ds-1),
  libtirpc3 (= 1.3.3+ds-1),
- libtool (= 2.4.7-5),
+ libtool (= 2.4.7-7~deb12u1),
  libtsan2 (= 12.2.0-14),
  libubsan1 (= 12.2.0-14),
- libudev1 (= 252.22-1~deb12u1),
+ libudev1 (= 252.30-1~deb12u2),
  libunistring2 (= 1.0-2),
  libuuid1 (= 2.38.1-5+deb12u1),
  libxml2 (= 2.9.14+dfsg-1.3~deb12u1),
  libz3-4 (= 4.8.12-3.1),
  libzstd1 (= 1.5.4+dfsg2-5),
- linux-libc-dev (= 6.1.90-ragnarok-amd64-1),
+ linux-libc-dev (= 6.1.106-3),
  llvm-17-linker-tools (= 1:17.0.6~++20231208085813+6009708b4367-1~exp1~20231208085906.81),
  login (= 1:4.13+dfsg1-1+b1),
  m4 (= 1.4.19-3),
@@ -176,9 +176,9 @@ Installed-Build-Depends:
  xz-utils (= 5.4.1-0.2),
  zlib1g (= 1:1.2.13.dfsg-1)
 Environment:
- DEB_BUILD_OPTIONS="parallel=2"
- DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
- DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/home/lecorbeau/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_BUILD_OPTIONS="parallel=3"
+ DEB_CFLAGS_SET="-g -O2 -ffile-prefix-map=/mnt/build/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
+ DEB_CXXFLAGS_SET="-g -O2 -ffile-prefix-map=/mnt/build/base-files=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection"
  DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed"
  LANG="en_CA.UTF-8"
- SOURCE_DATE_EPOCH="1719681680"
+ SOURCE_DATE_EPOCH="1725114919"
