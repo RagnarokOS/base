@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 16 Sep 2024 13:44:51 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.13
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.13) stable; urgency=medium
+ .
+   * Added the syslinux-install script.
+Checksums-Sha1:
+ 46cf25d4318d39505f54b7e8202b442d27fe47fa 5874 ragnarok-base_01-2.13_amd64.buildinfo
+ 6f054ae1b4cdcfb38dbeb516101422b5767743cd 20068 ragnarok-base_01-2.13_amd64.deb
+Checksums-Sha256:
+ 29282bbe1f640501668fa84aa08bfa43de9c7de2636d76768a97e458dc5b5b70 5874 ragnarok-base_01-2.13_amd64.buildinfo
+ 657db39cd3fd10d4104e7c1a94242e50320571a0d6ad9a2166cc4775b6804cb0 20068 ragnarok-base_01-2.13_amd64.deb
+Files:
+ 0b7617f673a6d21798cea29a88be0d19 5874 base standard ragnarok-base_01-2.13_amd64.buildinfo
+ 874acbb7b7f1c36961c0a8d475258589 20068 base standard ragnarok-base_01-2.13_amd64.deb
