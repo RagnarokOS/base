@@ -199,10 +199,10 @@ Depends: mmdebstrap,
 Priority: optional
 Section: devel
 Filename: pool/main/r/ragnarok-installer/ragnarok-installer_01_amd64.deb
-Size: 30608
-SHA256: 0811ed2bc8258e478af3fd0ce3d490cb5af29db079fa5d6cc80261a9e9e8bcd0
-SHA1: 70c0df2ae17c155d67ad83e3bf8a7694e233c1a4
-MD5sum: 1ea6a498b1d31c090196d0dd2253a7bc
+Size: 19008
+SHA256: 8bc9ebec9b687722c0b836cb23cb3000b7e03bd00e87ba61fd0e8bcbdf718e46
+SHA1: 164c836d781abe6d0c5ed5d4c45ed984cbccabf9
+MD5sum: ef7d7f0279b55b0f202cab3274952565
 Description: Ragnarok's installer
  This package provides the ragnarok installers.
 
