@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 23 Sep 2024 13:30:29 -0400
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-2.14
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-2.14) stable; urgency=medium
+ .
+   * Added fdisk to depends.
+Checksums-Sha1:
+ dbde20571c37dc598c4203039bf03d437cd27778 5884 ragnarok-base_01-2.14_amd64.buildinfo
+ 0575eb8033cd464a30ba6c7e0a78e791b594270a 20100 ragnarok-base_01-2.14_amd64.deb
+Checksums-Sha256:
+ d152fd71b3611749df6a84b32abebb852d7f1d8ec1376b508cb630dc3e6d54b4 5884 ragnarok-base_01-2.14_amd64.buildinfo
+ cc2ff1cd71b6aa575fea48403559960b0bc06861f1c3c6cc5b5a066e2aa889c7 20100 ragnarok-base_01-2.14_amd64.deb
+Files:
+ 5e796e9e117f2b2098f06743cfd01310 5884 base standard ragnarok-base_01-2.14_amd64.buildinfo
+ d0e122c124a4caf7cf879abb9f3ec5a1 20100 base standard ragnarok-base_01-2.14_amd64.deb

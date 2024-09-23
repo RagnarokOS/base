@@ -152,19 +152,19 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01-2.13
+Version: 01-2.14
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 94
-Depends: oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs, wget, ca-certificates, lsb-release, apt-utils, apparmor-utils, eject
+Depends: oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sysvinit-core, sysv-rc, orphan-sysvinit-scripts, systemctl, elogind, libpam-elogind, procps, nftables, rsyslog, logrotate, tmux, vim, ifupdown, libbsd-dev, libncurses-dev, libopenbsd, adduser, openrcs, wget, ca-certificates, lsb-release, apt-utils, apparmor-utils, eject, fdisk
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.13_amd64.deb
-Size: 20068
-SHA256: 657db39cd3fd10d4104e7c1a94242e50320571a0d6ad9a2166cc4775b6804cb0
-SHA1: 6f054ae1b4cdcfb38dbeb516101422b5767743cd
-MD5sum: 874acbb7b7f1c36961c0a8d475258589
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.14_amd64.deb
+Size: 20100
+SHA256: cc2ff1cd71b6aa575fea48403559960b0bc06861f1c3c6cc5b5a066e2aa889c7
+SHA1: 0575eb8033cd464a30ba6c7e0a78e791b594270a
+MD5sum: d0e122c124a4caf7cf879abb9f3ec5a1
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
@@ -207,19 +207,19 @@ Description: Ragnarok's installer
  This package provides the ragnarok installers.
 
 Package: ragnarok-virt
-Version: 01
+Version: 01-1
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 13
-Depends: qemu-system, qemu-utils, libvirt-clients, libvirt-daemon-system, libvirt-daemon-system-sysv, virtinst, ovmf
+Depends: qemu-system, qemu-utils, libvirt-clients, libvirt-daemon-system, libvirt-daemon-system-sysv, ovmf
 Multi-Arch: foreign
 Priority: optional
 Section: admin
-Filename: pool/main/r/ragnarok-virt/ragnarok-virt_01_amd64.deb
-Size: 2992
-SHA256: d6b324de9733fb396a021cb6a31a2264c4a7c57688d550f03e4eddc451ac6b4a
-SHA1: ea4925d58b5b7aabc0a2fb540f2db52c4ea111bc
-MD5sum: 24fa608cf481e65ba8cfd35c6c0b0f73
+Filename: pool/main/r/ragnarok-virt/ragnarok-virt_01-1_amd64.deb
+Size: 3048
+SHA256: 09a1dd39d32b12a2ef224f019cda93dbd9dc043360ddebe3627bfc46a74b90fc
+SHA1: 362347aa02bd1bd6ff29745c685bce28e4e529b7
+MD5sum: 57442428f285d5eb1ea01390f4859644
 Description: meta-package for Ragnarok's virt set.
  This is a meta-package which depends on all programs that
  are needed for Ragnarok's virt set.
