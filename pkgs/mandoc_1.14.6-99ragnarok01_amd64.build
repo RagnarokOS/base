@@ -1,0 +1,239 @@
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package mandoc
+dpkg-buildpackage: info: source version 1.14.6-99ragnarok01
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/i/mandoc'
+[ ! -f Makefile.local ] || /usr/bin/make clean
+make[1]: Leaving directory '/home/i/mandoc'
+   dh_clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking
+file config.log: writing...
+file configure.local: reading...
+tested operating system: Linux -> OSENUM=MANDOC_OS_OTHER
+tested cc -W: tested noop: yes
+selected CFLAGS="-g -W -Wall -Wmissing-prototypes -Wstrict-prototypes -Wwrite-strings -Wno-unused-parameter"
+tested noop-static: yes
+selected STATIC="-static"
+tested attribute: yes
+tested cmsg: yes
+tested dirent-namlen: no (compilation failed)
+tested be32toh: yes
+tested be32toh-DSYS_ENDIAN: no (compilation failed)
+tested EFTYPE: no (compilation failed)
+tested err: yes
+tested getline: yes
+tested getsubopt: yes
+tested isblank: yes
+tested mkdtemp: yes
+tested mkstemps: yes
+tested nanosleep: yes
+tested ntohl: yes
+tested O_DIRECTORY: yes
+tested PATH_MAX: yes
+tested pledge: no (compilation failed)
+tested sandbox_init: no (compilation failed)
+tested progname: no (compilation failed)
+tested reallocarray: yes
+tested recallocarray: no (compilation failed)
+tested recallocarray-D_OPENBSD_SOURCE: no (compilation failed)
+tested recvmsg: yes
+tested rewb-bsd: no (execution failed)
+tested rewb-sysv: yes
+tested strcasestr: no (compilation failed)
+tested strcasestr-D_GNU_SOURCE: yes
+tested stringlist: no (compilation failed)
+tested strlcat: no (compilation failed)
+tested strlcpy: no (compilation failed)
+tested strndup: yes
+tested strptime: no (compilation failed)
+tested strptime-D_GNU_SOURCE: yes
+tested strsep: yes
+tested strtonum: no (compilation failed)
+tested strtonum-D_OPENBSD_SOURCE: no (compilation failed)
+tested vasprintf: no (compilation failed)
+tested vasprintf-D_GNU_SOURCE: yes
+tested fts-DFTS_COMPARE_CONST: no (compilation failed)
+tested fts: yes
+selected BINM_PAGER=less (manual)
+tested less -T: yes
+selected UTF8_LOCALE=C.utf8
+tested wchar: HAVE_WCHAR=1 (manual)
+tested ohash: no (compilation failed)
+tested ohash-lutil: no (compilation failed)
+selected LDADD="    -lz"
+file config.h: written
+file Makefile.local: written
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/home/i/mandoc'
+dh_auto_build -- CC=clang CFLAGS="$CFLAGS" CPPFLAGS="$CPPFLAGS" LDFLAGS="$LDFLAGS"
+	make -j3 CC=clang "CFLAGS=-g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin" "CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2" "LDFLAGS=-Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2"
+make[2]: Entering directory '/home/i/mandoc'
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o eqn_html.o eqn_html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o html.o html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o man_html.o man_html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_html.o mdoc_html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o roff_html.o roff_html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl_html.o tbl_html.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o eqn_term.o eqn_term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o man_term.o man_term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_term.o mdoc_term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o roff_term.o roff_term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o term.o term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o term_ascii.o term_ascii.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o term_ps.o term_ps.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o term_tab.o term_tab.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o term_tag.o term_tag.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl_term.o tbl_term.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dbm.o dbm.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dbm_map.o dbm_map.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mansearch.o mansearch.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dba.o dba.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dba_array.o dba_array.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dba_read.o dba_read.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dba_write.o dba_write.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandocdb.o mandocdb.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o main.o main.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o manpath.o manpath.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_man.o mdoc_man.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_markdown.o mdoc_markdown.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o out.o out.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tree.o tree.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_ohash.o compat_ohash.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_progname.o compat_progname.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_recallocarray.o compat_recallocarray.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_strlcat.o compat_strlcat.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_strlcpy.o compat_strlcpy.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_strtonum.o compat_strtonum.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o man.o man.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o man_macro.o man_macro.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o man_validate.o man_validate.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o att.o att.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o lib.o lib.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc.o mdoc.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_argv.o mdoc_argv.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_macro.o mdoc_macro.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_state.o mdoc_state.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mdoc_validate.o mdoc_validate.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o st.o st.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o eqn.o eqn.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o roff.o roff.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o roff_validate.o roff_validate.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl.o tbl.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl_data.o tbl_data.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl_layout.o tbl_layout.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tbl_opts.o tbl_opts.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o arch.o arch.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o chars.o chars.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandoc.o mandoc.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandoc_aux.o mandoc_aux.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandoc_msg.o mandoc_msg.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandoc_ohash.o mandoc_ohash.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandoc_xr.o mandoc_xr.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o msec.o msec.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o preconv.o preconv.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o read.o read.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tag.o tag.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o demandoc.o demandoc.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compat_stringlist.o compat_stringlist.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o soelim.o soelim.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mandocd.o mandocd.c
+clang -g -O2 -ffile-prefix-map=/home/i/mandoc=. -fstack-protector-strong -Wformat -Werror=format-security -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o catman.o catman.c
+ar rs libmandoc.a compat_ohash.o compat_progname.o compat_recallocarray.o compat_strlcat.o compat_strlcpy.o compat_strtonum.o man.o man_macro.o man_validate.o att.o lib.o mdoc.o mdoc_argv.o mdoc_macro.o mdoc_state.o mdoc_validate.o st.o eqn.o roff.o roff_validate.o tbl.o tbl_data.o tbl_layout.o tbl_opts.o arch.o chars.o mandoc.o mandoc_aux.o mandoc_msg.o mandoc_ohash.o mandoc_xr.o msec.o preconv.o read.o tag.o
+ar: creating libmandoc.a
+clang -o soelim -Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2 compat_progname.o compat_stringlist.o soelim.o
+clang -o mandoc -Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2 eqn_html.o html.o man_html.o mdoc_html.o roff_html.o tbl_html.o  eqn_term.o man_term.o mdoc_term.o roff_term.o term.o term_ascii.o term_ps.o term_tab.o term_tag.o tbl_term.o dbm.o dbm_map.o mansearch.o dba.o dba_array.o dba_read.o dba_write.o mandocdb.o main.o manpath.o mdoc_man.o mdoc_markdown.o out.o tree.o libmandoc.a -lz
+clang -o demandoc -Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2 demandoc.o libmandoc.a -lz
+clang -o mandocd -Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2 eqn_html.o html.o man_html.o mdoc_html.o roff_html.o tbl_html.o eqn_term.o man_term.o mdoc_term.o roff_term.o term.o term_ascii.o term_ps.o term_tab.o term_tag.o tbl_term.o mandocd.o out.o libmandoc.a -lz
+clang -o catman -Wl,-z,relro -Wl,-z,now -flto=thin -Wl,-O2 catman.o libmandoc.a -lz
+ln -sf mandoc man
+make[2]: Leaving directory '/home/i/mandoc'
+make[1]: Leaving directory '/home/i/mandoc'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/home/i/mandoc'
+(cd regress && ./regress.pl)
+Running ascii, tag, and man tests ..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................... 565 + 28 + 244 tests run.
+Running utf8 tests ..................... 21 tests run.
+Running html tests .................................................................... 68 tests run.
+Running markdown tests ............................................................................................................................................................................................................................................................. 253 tests run.
+Running lint tests ........................................................................................................................................................................................................................................................ 248 tests run.
+All 1427 tests OK: 565 ascii 28 tag 244 man 21 utf8 68 html 253 markdown 248 lint
+make[1]: Leaving directory '/home/i/mandoc'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install --destdir=debian/mandoc/
+	make -j3 install DESTDIR=/home/i/mandoc/debian/mandoc AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/home/i/mandoc'
+mkdir -p /home/i/mandoc/debian/mandoc/usr/bin
+mkdir -p /home/i/mandoc/debian/mandoc/usr/sbin
+mkdir -p /home/i/mandoc/debian/mandoc/usr/sbin
+mkdir -p /home/i/mandoc/debian/mandoc/usr/share/man/man8
+mkdir -p /home/i/mandoc/debian/mandoc/usr/share/man/man1
+install -m 0555 mandocd /home/i/mandoc/debian/mandoc/usr/sbin
+mkdir -p /home/i/mandoc/debian/mandoc/usr/share/man/man5
+mkdir -p /home/i/mandoc/debian/mandoc/usr/share/man/man7
+install -m 0555 catman /home/i/mandoc/debian/mandoc/usr/sbin/catman
+mkdir -p /home/i/mandoc/debian/mandoc/usr/share/man/man8
+debian/install_mandoc mandocd.8 /home/i/mandoc/debian/mandoc/usr/share/man/man8
+install -m 0555 mandoc demandoc /home/i/mandoc/debian/mandoc/usr/bin
+install -m 0555 soelim /home/i/mandoc/debian/mandoc/usr/bin/soelim
+cd /home/i/mandoc/debian/mandoc/usr/bin && ln -sf mandoc man
+cd /home/i/mandoc/debian/mandoc/usr/bin && ln -sf mandoc apropos
+cd /home/i/mandoc/debian/mandoc/usr/bin && ln -sf mandoc whatis
+cd /home/i/mandoc/debian/mandoc/usr/sbin && \
+	ln -sf ../bin/mandoc makewhatis
+debian/install_mandoc catman.8 /home/i/mandoc/debian/mandoc/usr/share/man/man8/catman.8
+debian/install_mandoc mandoc.1 demandoc.1 /home/i/mandoc/debian/mandoc/usr/share/man/man1
+debian/install_mandoc soelim.1 /home/i/mandoc/debian/mandoc/usr/share/man/man1/soelim.1
+debian/install_mandoc man.1 /home/i/mandoc/debian/mandoc/usr/share/man/man1/man.1
+debian/install_mandoc apropos.1 /home/i/mandoc/debian/mandoc/usr/share/man/man1/apropos.1
+cd /home/i/mandoc/debian/mandoc/usr/share/man/man1 && ln -sf apropos.1 whatis.1
+debian/install_mandoc man.conf.5 /home/i/mandoc/debian/mandoc/usr/share/man/man5/man.conf.5
+debian/install_mandoc mandoc.db.5 /home/i/mandoc/debian/mandoc/usr/share/man/man5
+debian/install_mandoc man.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7/mandoc.7
+debian/install_mandoc mdoc.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7/mdoc.7
+debian/install_mandoc roff.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7/roff.7
+debian/install_mandoc eqn.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7/eqn.7
+debian/install_mandoc tbl.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7/tbl.7
+debian/install_mandoc mandoc_char.7 /home/i/mandoc/debian/mandoc/usr/share/man/man7
+debian/install_mandoc makewhatis.8 \
+	/home/i/mandoc/debian/mandoc/usr/share/man/man8/makewhatis.8
+make[1]: Leaving directory '/home/i/mandoc'
+   dh_installdocs
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory '/home/i/mandoc'
+dh_installchangelogs NEWS
+make[1]: Leaving directory '/home/i/mandoc'
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'mandoc-dbgsym' in '../mandoc-dbgsym_1.14.6-99ragnarok01_amd64.deb'.
+dpkg-deb: building package 'mandoc' in '../mandoc_1.14.6-99ragnarok01_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../mandoc_1.14.6-99ragnarok01_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../mandoc_1.14.6-99ragnarok01_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)

@@ -1,0 +1,161 @@
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package oksh
+dpkg-buildpackage: info: source version 7.5-ragnarok01
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j3 clean
+make[1]: Entering directory '/mnt/build/oksh'
+rm -f ksh alloc.o asprintf.o c_ksh.o c_sh.o c_test.o c_ulimit.o edit.o emacs.o eval.o exec.o expr.o history.o io.o jobs.o lex.o mail.o main.o misc.o path.o shf.o syn.o table.o trap.o tree.o tty.o var.o version.o vi.o confstr.o reallocarray.o siglist.o signame.o strlcat.o strlcpy.o strtonum.o unvis.o vis.o issetugid.o
+make[1]: Leaving directory '/mnt/build/oksh'
+   dh_clean
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/oksh.substvars debian/files
+	rm -fr -- debian/oksh/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j3 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/mnt/build/oksh'
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o alloc.o alloc.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o asprintf.o asprintf.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o c_ksh.o c_ksh.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o c_sh.o c_sh.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o c_test.o c_test.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o c_ulimit.o c_ulimit.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o edit.o edit.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o emacs.o emacs.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o eval.o eval.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o exec.o exec.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o expr.o expr.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o history.o history.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o io.o io.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o jobs.o jobs.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o lex.o lex.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mail.o mail.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o main.o main.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o misc.o misc.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o path.o path.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o shf.o shf.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o syn.o syn.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o table.o table.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o trap.o trap.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tree.o tree.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tty.o tty.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o var.o var.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o version.o version.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o vi.o vi.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o confstr.o confstr.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o reallocarray.o reallocarray.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o siglist.o siglist.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o signame.o signame.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o strlcat.o strlcat.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o strlcpy.o strlcpy.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o strtonum.o strtonum.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o unvis.o unvis.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o vis.o vis.c
+clang -g -O2 -ffile-prefix-map=/mnt/build/oksh=. -fstack-protector-strong -Wformat -Werror=format-security -gdwarf-4 -fstack-clash-protection -fcf-protection -g -O2 -DEMACS -DVI -w -D_GNU_SOURCE -flto=thin -Wdate-time -D_FORTIFY_SOURCE=2  -c -o issetugid.o issetugid.c
+clang -Wl,-z,relro -Wl,-z,now -Wl,-z,now -Wl,--as-needed -flto=thin -Wl,-O2 -o ksh alloc.o asprintf.o c_ksh.o c_sh.o c_test.o c_ulimit.o edit.o emacs.o eval.o exec.o expr.o history.o io.o jobs.o lex.o mail.o main.o misc.o path.o shf.o syn.o table.o trap.o tree.o tty.o var.o version.o vi.o confstr.o reallocarray.o siglist.o signame.o strlcat.o strlcpy.o strtonum.o unvis.o vis.o issetugid.o  -lcurses 
+make[1]: Leaving directory '/mnt/build/oksh'
+   dh_auto_test
+	make -j3 test
+make[1]: Entering directory '/mnt/build/oksh'
+echo "No tests"
+No tests
+make[1]: Leaving directory '/mnt/build/oksh'
+	rm -fr -- /tmp/dh-xdg-rundir-iWg6uCAI
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+	rm -f -- debian/oksh.substvars
+	rm -fr -- debian/.debhelper/generated/oksh/ debian/oksh/ debian/tmp/
+   dh_auto_install --destdir=debian/oksh/
+	install -m0755 -d /mnt/build/oksh/debian/oksh
+	make -j3 install DESTDIR=/mnt/build/oksh/debian/oksh AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/mnt/build/oksh'
+install -d /mnt/build/oksh/debian/oksh/bin
+install -d /mnt/build/oksh/debian/oksh/etc/skel
+install -d /mnt/build/oksh/debian/oksh/usr/share/man/man1
+install -c -s -m 755 ksh /mnt/build/oksh/debian/oksh/bin
+install -c -m 644 ksh.1 /mnt/build/oksh/debian/oksh/usr/share/man/man1
+install -c -m 644 ksh.kshrc /mnt/build/oksh/debian/oksh/etc
+install -c -m 644 .kshrc /mnt/build/oksh/debian/oksh/etc/skel
+make[1]: Leaving directory '/mnt/build/oksh'
+   dh_installdocs
+	install -m0755 -d debian/oksh/usr/share/doc/oksh
+	install -p -m0644 debian/README.Debian debian/oksh/usr/share/doc/oksh/README.Debian
+	install -p -m0644 debian/copyright debian/oksh/usr/share/doc/oksh/copyright
+   dh_installchangelogs
+	install -m0755 -d debian/oksh/usr/share/doc/oksh
+	install -p -m0644 debian/.debhelper/generated/oksh/dh_installchangelogs.dch.trimmed debian/oksh/usr/share/doc/oksh/changelog.Debian
+   dh_installman
+	man-recode --to-code UTF-8 --suffix .dh-new debian/oksh/usr/share/man/man1/ksh.1
+	mv debian/oksh/usr/share/man/man1/ksh.1.dh-new debian/oksh/usr/share/man/man1/ksh.1
+	chmod 0644 -- debian/oksh/usr/share/man/man1/ksh.1
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+	cd debian/oksh
+	chmod a-x usr/share/doc/oksh/changelog.Debian usr/share/man/man1/ksh.1
+	gzip -9nf usr/share/doc/oksh/changelog.Debian usr/share/man/man1/ksh.1
+	cd '/mnt/build/oksh'
+   dh_fixperms
+	find debian/oksh ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/oksh/usr/share/doc -type f -a -true -a ! -regex 'debian/oksh/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/oksh/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/oksh/usr/share/man -type f -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/oksh -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/oksh/bin -type f -a -true -a -true -print0 2>/dev/null | xargs -0r chmod a+x
+   dh_missing
+   dh_dwz -a
+	dwz -- debian/oksh/bin/ksh
+dwz: debian/oksh/bin/ksh: .debug_info section not present
+   dh_strip -a
+	strip --remove-section=.comment --remove-section=.note debian/oksh/bin/ksh
+   dh_makeshlibs -a
+	rm -f debian/oksh/DEBIAN/shlibs
+   dh_shlibdeps -a
+	install -m0755 -d debian/oksh/DEBIAN
+	dpkg-shlibdeps -Tdebian/oksh.substvars debian/oksh/bin/ksh
+   dh_installdeb
+	install -m0755 -d debian/oksh/DEBIAN
+	cp -f debian/postinst debian/oksh/DEBIAN/postinst
+	[META] Replace #TOKEN#s in "debian/oksh/DEBIAN/postinst"
+	chmod 0755 -- debian/oksh/DEBIAN/postinst
+	find debian/oksh/etc -type f -printf '/etc/%P
+' | LC_ALL=C sort >> debian/oksh/DEBIAN/conffiles
+	chmod 0644 -- debian/oksh/DEBIAN/conffiles
+   dh_gencontrol
+	install -m0755 -d debian/oksh/DEBIAN
+	echo misc:Depends= >> debian/oksh.substvars
+	echo misc:Pre-Depends= >> debian/oksh.substvars
+	dpkg-gencontrol -poksh -ldebian/changelog -Tdebian/oksh.substvars -Pdebian/oksh
+	chmod 0644 -- debian/oksh/DEBIAN/control
+   dh_md5sums
+	install -m0755 -d debian/oksh/DEBIAN
+	cd debian/oksh >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/oksh/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --root-owner-group --build debian/oksh ..
+dpkg-deb: building package 'oksh' in '../oksh_7.5-ragnarok01_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../oksh_7.5-ragnarok01_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../oksh_7.5-ragnarok01_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)

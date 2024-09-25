@@ -118,7 +118,7 @@ Description: BSD manpage compiler toolset
  This is the default man implementation in Ragnarok.
 
 Package: oksh
-Version: 7.5-ragnarok01
+Version: 7.5-ragnarok1.1
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 383
@@ -126,11 +126,11 @@ Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
 Homepage: https://github.com/RagnarokOS/oksh
 Priority: required
 Section: shells
-Filename: pool/main/o/oksh/oksh_7.5-ragnarok01_amd64.deb
-Size: 184396
-SHA256: 1ec46d9e9946e8a38d7170eed8ccb9ea64126716625f059b94793a18edc6d4b9
-SHA1: 4dde383eeea229a12d309abdcf063260af18c259
-MD5sum: b9ffba06bc4ac9a69b1b0252b0f00034
+Filename: pool/main/o/oksh/oksh_7.5-ragnarok1.1_amd64.deb
+Size: 184496
+SHA256: 6edeef4e7bd6e905b6b13968f921236683e5ba4816596642d533252bef7fd2ff
+SHA1: db33178f29b0a181d07ce11918b60f3049fa4ce8
+MD5sum: d7b34bfa898556b6da3924e7ac5d1a82
 Description: OpenBSD ksh.
  Portable version of OpenBSD's korn shell implementation.
  Used as the default login/interactive shell in Ragnarok.

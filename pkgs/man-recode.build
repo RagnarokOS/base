@@ -1,0 +1,55 @@
+dpkg-buildpackage: info: source package man-recode
+dpkg-buildpackage: info: source version 2.11.2
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/home/lecorbeau/.local/src/man-recode/equivs.FCGNoO'
+dh clean
+   dh_clean
+make[1]: Leaving directory '/home/lecorbeau/.local/src/man-recode/equivs.FCGNoO'
+ debian/rules binary
+make[1]: Entering directory '/home/lecorbeau/.local/src/man-recode/equivs.FCGNoO'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/man-recode/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+dwz: debian/man-recode/usr/bin/man-recode: .debug_info section not present
+dwz: debian/man-recode/usr/lib/man-db/libman-2.11.2.so: .debug_info section not present
+dwz: Too few files for multifile optimization
+dh_dwz: warning: No dwz multifile created, but not explicitly requested either so ignoring it.
+dh_dwz: warning: Common issues include no debug information at all (missing -g) and
+dh_dwz: warning: compressed debug information (#931891).
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: package man-recode: substitution variable ${shlibs:Depends} unused, but is defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'man-recode' in '../man-recode_2.11.2_amd64.deb'.
+make[1]: Leaving directory '/home/lecorbeau/.local/src/man-recode/equivs.FCGNoO'
+ dpkg-genbuildinfo --build=binary -O../man-recode_2.11.2_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../man-recode_2.11.2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!

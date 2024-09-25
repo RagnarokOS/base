@@ -1,0 +1,81 @@
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package base-files
+dpkg-buildpackage: info: source version 999+ragnarok01-4
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/mnt/build/base-files'
+sh debian/check-md5sum-etc profile
+sed -e "s/#VENDORFILE#/ragnarok/g" debian/postinst.in > debian/postinst
+make[1]: Leaving directory '/mnt/build/base-files'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/mnt/build/base-files'
+install -p -m 644 etc/*      debian/base-files/etc
+install -p -m 755 motd/*     debian/base-files/etc/update-motd.d
+install -p -m 644 licenses/* debian/base-files/usr/share/common-licenses
+install -p -m 644 origins/*  debian/base-files/etc/dpkg/origins
+install -p -m 644 share/*    debian/base-files/usr/share/base-files
+sed -e "s&#OSNAME#&"GNU/`uname | sed -e 's/GNU\///'`"&g" share/motd     > debian/base-files/usr/share/base-files/motd
+sed -e "s&#OSNAME#&"GNU/`uname | sed -e 's/GNU\///'`"&g" share/info.dir > debian/base-files/usr/share/base-files/info.dir
+sed -e "s&#OSNAME#&"GNU/`uname | sed -e 's/GNU\///'`"&g" etc/issue      > debian/base-files/etc/issue
+sed -e "s&#OSNAME#&"GNU/`uname | sed -e 's/GNU\///'`"&g" etc/issue.net  > debian/base-files/etc/issue.net
+sed -e "s&#OSNAME#&"GNU/`uname | sed -e 's/GNU\///'`"&g" etc/os-release > debian/base-files/etc/os-release
+mv debian/base-files/etc/os-release debian/base-files/usr/lib/os-release
+ln -s ../usr/lib/os-release debian/base-files/etc/os-release
+make[1]: Leaving directory '/mnt/build/base-files'
+   dh_installdocs
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory '/mnt/build/base-files'
+dh_installchangelogs --no-trim
+make[1]: Leaving directory '/mnt/build/base-files'
+   dh_installman
+   dh_lintian
+   dh_perl
+   debian/rules override_dh_link
+make[1]: Entering directory '/mnt/build/base-files'
+dh_link -X os-release
+make[1]: Leaving directory '/mnt/build/base-files'
+   dh_strip_nondeterminism
+   debian/rules override_dh_compress
+make[1]: Entering directory '/mnt/build/base-files'
+dh_compress -X README
+make[1]: Leaving directory '/mnt/build/base-files'
+   debian/rules override_dh_fixperms
+make[1]: Entering directory '/mnt/build/base-files'
+dh_fixperms
+cd debian/base-files && chown root:staff   var/local
+cd debian/base-files && chmod 755  `find . -type d`
+cd debian/base-files && chmod 1777 `cat ../1777-dirs`
+cd debian/base-files && chmod 2775 `cat ../2775-dirs`
+cd debian/base-files && chmod 700 root
+make[1]: Leaving directory '/mnt/build/base-files'
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'base-files' in '../base-files_999+ragnarok01-4_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../base-files_999+ragnarok01-4_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../base-files_999+ragnarok01-4_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
