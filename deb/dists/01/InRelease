@@ -5,26 +5,26 @@ Origin: Ragnarok
 Label: Ragnarok
 Suite: stable
 Codename: 01
-Date: Sun, 29 Sep 2024 17:21:41 UTC
+Date: Sun, 29 Sep 2024 17:29:24 UTC
 Architectures: amd64
 Components: main
 Description: Ragnarok's deb package repository
 MD5Sum:
- edf1f3877aa2e7532a1a5b139d79e4b9 9357 main/binary-amd64/Packages
- 398987d6e40f7ab2f443462cd2a792d9 3636 main/binary-amd64/Packages.gz
+ 96547ba6aaeffbe43d890f27c4b10ffe 9361 main/binary-amd64/Packages
+ 59f43deebf5ade5ef094228342e2fdce 3637 main/binary-amd64/Packages.gz
  e0b5796a31dc4a6a17126bd80f141ccc 132 main/binary-amd64/Release
 SHA1:
- a4d70621e7954c98b499359784dc9caae79d3d76 9357 main/binary-amd64/Packages
- e45ed8549a08c7439e7509ad471c56b986c289e5 3636 main/binary-amd64/Packages.gz
+ b621533300c9db0d26062ab94a7d3f41fff8e48b 9361 main/binary-amd64/Packages
+ 6a331addde6b227f6d203f09cc76778ccdb07480 3637 main/binary-amd64/Packages.gz
  0a0336ec8bb4f3ea24d850872c2e42491a4b7124 132 main/binary-amd64/Release
 SHA256:
- 0b8a8fd31179e899fafc8f7b63d4fa72b2d50655c7585ac4b1cc38c337e1a1a1 9357 main/binary-amd64/Packages
- a04f4877cad57df9a599f87534f6daa8852a01e124a4e759412ae57ae3ba617d 3636 main/binary-amd64/Packages.gz
+ e0c6a6e0de9fcefb577e241d47a16b571ae4b40cde60aaea897936bdd93f849c 9361 main/binary-amd64/Packages
+ bac6a2b504a3438cbb2495fa8e5fbf25b91df78d974581e2ef2add7fa409c943 3637 main/binary-amd64/Packages.gz
  1ae212d46af020e6d5bae3bbb624b7d5999376ec3501da6f80a61fab3b28086c 132 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQQd07yWiPPvmI0+oCME+3X+t3o0LwUCZvmMpQAKCRAE+3X+t3o0
-L8d+AP4+VQiX7MR6GcORfVRD8aiQfa6kf5WKjFjXooMZAYu3tgEA/ZqcbCN9e2Ca
-ajboby03yOaejhDRj3xX1KyJYHZCMQ4=
-=jnCw
+iHUEARYIAB0WIQQd07yWiPPvmI0+oCME+3X+t3o0LwUCZvmOdAAKCRAE+3X+t3o0
+LwqwAQCnDr/iu6aAbkl8h0YgqdnVY8/p7OElQza3Pe3qGSWgfQD/cl5YTs07/Ebb
+dPN7YZN0M1YeEevCTAToC5eBYmhGsA8=
+=Tr6F
 -----END PGP SIGNATURE-----
