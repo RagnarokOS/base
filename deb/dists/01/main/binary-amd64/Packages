@@ -190,7 +190,7 @@ Description: meta-package for Ragnarok's devel set.
  are needed for Ragnarok's devel set.
 
 Package: ragnarok-installer
-Version: 01-3
+Version: 01-4
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Depends: mmdebstrap,
@@ -198,11 +198,11 @@ Depends: mmdebstrap,
  wget
 Priority: optional
 Section: devel
-Filename: pool/main/r/ragnarok-installer/ragnarok-installer_01-3_amd64.deb
-Size: 19628
-SHA256: 4ee7151506be0d4e997c52d7e20353acffecfae2a0fe3ae7361705da9a1eed35
-SHA1: b1b80a5f26d8c4836b5a74884e25c30aa381af79
-MD5sum: df3f29fc42cf11a8d88a16b51b9a4f29
+Filename: pool/main/r/ragnarok-installer/ragnarok-installer_01-4_amd64.deb
+Size: 19856
+SHA256: c9d89b8d317d63469efd14aaba6448b426cb6b57f580d55a057943648eb1068b
+SHA1: 5d694b402d42d59f85bde08b2736fc99cfed1b1d
+MD5sum: 248b08e76703da6f37417f843b9289d1
 Description: Ragnarok's installer
  This package provides the ragnarok installers.
 
