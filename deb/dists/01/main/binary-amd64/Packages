@@ -152,7 +152,7 @@ Description: OpenBSD's version of RCS (Revision Control System)
  files under a VCS without installing anything else.
 
 Package: ragnarok-base
-Version: 01-2.15
+Version: 01-3
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Installed-Size: 95
@@ -160,11 +160,11 @@ Depends: oksh, ed, mandoc, doas, signify-openbsd, bsd-mailx, dma | opensmtpd, sy
 Homepage: https://github.com/RagnarokOS/src
 Priority: standard
 Section: base
-Filename: pool/main/r/ragnarok-base/ragnarok-base_01-2.15_amd64.deb
-Size: 20232
-SHA256: 96417e2dd51bd8c7649947bd9cfecd94edede0e29a2ba61bc1ea675fadf05df2
-SHA1: f70fe71b15ea89d2c2579a8947481c54572eb788
-MD5sum: 19d0a3f031c5965b733abd2bc7037e3c
+Filename: pool/main/r/ragnarok-base/ragnarok-base_01-3_amd64.deb
+Size: 20260
+SHA256: 45e17d1007ef26740c0b08fb94f0f7c8b1a13f6e5d63d77bc61f117281133ea1
+SHA1: 9211bfb99e849c2f706e8b01353dc5ab8c9ea970
+MD5sum: 9066b0d6608950cb53b0de148511e54c
 Description: files for Ragnarok
  Package providing extra files for Ragnarok, as well as
  a postinst script that sets up the base system. This also
@@ -190,7 +190,7 @@ Description: meta-package for Ragnarok's devel set.
  are needed for Ragnarok's devel set.
 
 Package: ragnarok-installer
-Version: 01-5
+Version: 01-6
 Architecture: amd64
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Depends: mmdebstrap,
@@ -198,11 +198,11 @@ Depends: mmdebstrap,
  wget
 Priority: optional
 Section: devel
-Filename: pool/main/r/ragnarok-installer/ragnarok-installer_01-5_amd64.deb
-Size: 21104
-SHA256: 080eee56294769334f1dcb67d4a2bc22303331cf6b369a14b66a455894c135d8
-SHA1: c8e0b4ba6b55439bd619c78e35f1b378dde16f01
-MD5sum: a3a0e01495048f1b506126e669cb3cd6
+Filename: pool/main/r/ragnarok-installer/ragnarok-installer_01-6_amd64.deb
+Size: 21140
+SHA256: 692d502c5340c341d6b6d6de5699851323cbc5a4b5ccd801ed30aad3e3337dfe
+SHA1: 912b7c0360336634eda0ea1597ff968b5563d30e
+MD5sum: 79d3b203c5cb57f7e1618e21220a71e0
 Description: Ragnarok's installer
  This package provides the ragnarok installers.
 
