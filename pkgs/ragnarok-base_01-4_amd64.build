@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package ragnarok-base
-dpkg-buildpackage: info: source version 01-3
+dpkg-buildpackage: info: source version 01-4
 dpkg-buildpackage: info: source distribution stable
 dpkg-buildpackage: info: source changed by Ian LeCorbeau <I-LeCorbeau@protonmail.com>
  dpkg-source -i --before-build .
@@ -48,6 +48,7 @@ install -d /home/user/src/base/debian/ragnarok-base/etc/skel
 install apt/preferences.d/systemd /home/user/src/base/debian/ragnarok-base/etc/apt/preferences.d
 install apt/sources.list.d/llvm.sources /home/user/src/base/debian/ragnarok-base/etc/apt/sources.list.d
 install apt/sources.list.d/ragnarok.sources /home/user/src/base/debian/ragnarok-base/etc/apt/sources.list.d
+install apt/sources.list.d/brave-browser.sources /home/user/src/base/debian/ragnarok-base/etc/apt/sources.list.d
 install apt/trusted.gpg.d/apt.llvm.org.asc /home/user/src/base/debian/ragnarok-base/etc/apt/trusted.gpg.d
 install apt/trusted.gpg.d/ragnarok01.asc /home/user/src/base/debian/ragnarok-base/etc/apt/trusted.gpg.d
 install cron.daily/update-manpages /home/user/src/base/debian/ragnarok-base/etc/cron.daily/
@@ -66,7 +67,10 @@ install sysctl.d/02-hardening_net.conf /home/user/src/base/debian/ragnarok-base/
 make[2]: Leaving directory '/home/user/src/base/etc'
 make[2]: Entering directory '/home/user/src/base/usr'
 install -d /home/user/src/base/debian/ragnarok-base/usr/bin
+install -d /home/user/src/base/debian/ragnarok-base/usr/share/ragnarok/keyrings
 install bin/kernupd /home/user/src/base/debian/ragnarok-base/usr/bin
+install share/ragnarok/keyrings/brave-browser-archive-keyring.gpg \
+	/home/user/src/base/debian/ragnarok-base/usr/share/ragnarok/keyrings
 for _dir in lib share; do \
 	make -C $_dir install; \
 	done
@@ -128,9 +132,9 @@ make[1]: Leaving directory '/home/user/src/base'
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'ragnarok-base' in '../ragnarok-base_01-3_amd64.deb'.
- dpkg-genbuildinfo --build=binary -O../ragnarok-base_01-3_amd64.buildinfo
- dpkg-genchanges --build=binary -O../ragnarok-base_01-3_amd64.changes
+dpkg-deb: building package 'ragnarok-base' in '../ragnarok-base_01-4_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ragnarok-base_01-4_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ragnarok-base_01-4_amd64.changes
 dpkg-genchanges: info: binary-only upload (no source code included)
  dpkg-source -i --after-build .
 dpkg-buildpackage: info: binary-only upload (no source included)
