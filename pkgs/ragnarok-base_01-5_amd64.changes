@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 09 Nov 2024 15:07:32 -0500
+Source: ragnarok-base
+Binary: ragnarok-base
+Architecture: amd64
+Version: 01-5
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ ragnarok-base - files for Ragnarok
+Changes:
+ ragnarok-base (01-5) stable; urgency=medium
+ .
+   * Deprecate the kernupd utility.
+Checksums-Sha1:
+ 49a075399af85e3cd21c72becb8663e3c23f9d59 5862 ragnarok-base_01-5_amd64.buildinfo
+ 5a9a8d71b2479e3511cd13d4bce1fa826671daed 18832 ragnarok-base_01-5_amd64.deb
+Checksums-Sha256:
+ 632b674f7c077e64aadcf6285c9dc4cbd0c2788cc5372e4d8b145bd5a365d399 5862 ragnarok-base_01-5_amd64.buildinfo
+ 045277895c4cfa1d78b3c27126a6486d6bb67b0715d7de99c9ad16bcd57af50e 18832 ragnarok-base_01-5_amd64.deb
+Files:
+ 0a7ef68c7d502d422f91320d1a18cf36 5862 base standard ragnarok-base_01-5_amd64.buildinfo
+ 60a98e1b470c8edc9ba18f9279ca862f 18832 base standard ragnarok-base_01-5_amd64.deb
