@@ -2,19 +2,19 @@ Origin: Ragnarok
 Label: Ragnarok
 Suite: stable
 Codename: 01
-Date: Fri, 08 Nov 2024 19:16:25 UTC
+Date: Sat, 09 Nov 2024 18:07:53 UTC
 Architectures: amd64
 Components: main
 Description: Ragnarok's deb package repository
 MD5Sum:
- 0e2809fbf8330339c35ffad1cabab385 9356 main/binary-amd64/Packages
- c18585503a3b6c146c6d4f34d61f4fda 3636 main/binary-amd64/Packages.gz
+ 65980485ee82f55b311c02e7b59f3b83 9356 main/binary-amd64/Packages
+ 34d8d72dba9d664f9347b6e26aa4541a 3634 main/binary-amd64/Packages.gz
  e0b5796a31dc4a6a17126bd80f141ccc 132 main/binary-amd64/Release
 SHA1:
- 44c420c42900799b311fa356d88163bdaf9ac7d2 9356 main/binary-amd64/Packages
- 363b752f8d310af714a419b7de3220d0eeaf2746 3636 main/binary-amd64/Packages.gz
+ 0a3fba13949347da5a7ff040bd34f4ea39916dcb 9356 main/binary-amd64/Packages
+ d2b1e97891873f5ff784b803af222d14a9973a1e 3634 main/binary-amd64/Packages.gz
  0a0336ec8bb4f3ea24d850872c2e42491a4b7124 132 main/binary-amd64/Release
 SHA256:
- 7a8de8e6d281447983aac41c57ef803e430792188e26123a14f4888fdcd46d60 9356 main/binary-amd64/Packages
- cc8f68a576dd83f210aac276bb2075ba2efdd0bbc66c0ccd1c29e0bb02f8a992 3636 main/binary-amd64/Packages.gz
+ 3100dd07104da47c8f4cbafc9d25d953f8bdffc5ae65e9bea4b25176d2827d9b 9356 main/binary-amd64/Packages
+ be6b50001e0dc09865a1d86cf5babbe651773147146ce03b38debd1df86667f4 3634 main/binary-amd64/Packages.gz
  1ae212d46af020e6d5bae3bbb624b7d5999376ec3501da6f80a61fab3b28086c 132 main/binary-amd64/Release
