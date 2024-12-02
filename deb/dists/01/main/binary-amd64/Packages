@@ -23,6 +23,37 @@ Description: Debian base system miscellaneous files
  and the text of several common licenses in use on Debian systems.
 Original-Maintainer: Santiago Vila <sanvila@debian.org>
 
+Package: coreutils
+Version: 9.1-99ragnarok01
+Architecture: amd64
+Essential: yes
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Installed-Size: 15833
+Pre-Depends: libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.44), libc6 (>= 2.34), libgmp10 (>= 2:6.2.1+dfsg1), libselinux1 (>= 3.1~)
+Multi-Arch: foreign
+Homepage: http://gnu.org/software/coreutils
+Priority: required
+Section: utils
+Filename: pool/main/c/coreutils/coreutils_9.1-99ragnarok01_amd64.deb
+Size: 2740172
+SHA256: 227b0339187ef99a38273830e90c662aae5df02a952f64e4c9bcfe1a35340102
+SHA1: 4bb68831852899999f250fad811333929733f8e0
+MD5sum: 30c64ea531c8b43935965637db4adce6
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes:
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand
+ uniq unlink users vdir wc who whoami yes
+Original-Maintainer: Michael Stone <mstone@debian.org>
+
 Package: ed
 Version: 7.4-ragnarok01
 Architecture: amd64

@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Mon, 02 Dec 2024 11:15:34 -0500
+Source: coreutils
+Binary: coreutils coreutils-dbgsym
+Architecture: amd64
+Version: 9.1-99ragnarok01
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ coreutils  - GNU core utilities
+Changes:
+ coreutils (9.1-99ragnarok01) stable; urgency=medium
+ .
+   * Initial build of GNU coreutils for Ragnarok.
+   * Differences with Debian:
+     - Built using LLVM/Clang
+     - Adds extra hardening flags (see etc/dpkg/buildflags.conf)
+     - Uses ThinLTO
+Checksums-Sha1:
+ 74b4d8a5e2b9208a49608aa23149bcce7645faaf 3725192 coreutils-dbgsym_9.1-99ragnarok01_amd64.deb
+ 9caadf96bf4e00f02812875cab33c2c9851dd9d3 7384 coreutils_9.1-99ragnarok01_amd64.buildinfo
+ 4bb68831852899999f250fad811333929733f8e0 2740172 coreutils_9.1-99ragnarok01_amd64.deb
+Checksums-Sha256:
+ b625a74b4011587ca13d41b9a23938ea69ab20e3fa0caa9cb43940097fab9950 3725192 coreutils-dbgsym_9.1-99ragnarok01_amd64.deb
+ 42f5237a42eb597dbdf0d3f4cc3dd1d3d36be61ab4d7aabc88d89fa7af384a06 7384 coreutils_9.1-99ragnarok01_amd64.buildinfo
+ 227b0339187ef99a38273830e90c662aae5df02a952f64e4c9bcfe1a35340102 2740172 coreutils_9.1-99ragnarok01_amd64.deb
+Files:
+ c9c5fb63af1689f683041cc6fed04fef 3725192 debug optional coreutils-dbgsym_9.1-99ragnarok01_amd64.deb
+ 175a98fef5618fbf413ad6a87f175bb1 7384 utils required coreutils_9.1-99ragnarok01_amd64.buildinfo
+ 30c64ea531c8b43935965637db4adce6 2740172 utils required coreutils_9.1-99ragnarok01_amd64.deb
+Original-Maintainer: Michael Stone <mstone@debian.org>
