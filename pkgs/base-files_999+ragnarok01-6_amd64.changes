@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Sat, 11 Jan 2025 13:34:21 -0500
+Source: base-files
+Binary: base-files
+Architecture: amd64
+Version: 999+ragnarok01-6
+Distribution: stable
+Urgency: medium
+Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Changed-By: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
+Description:
+ base-files - Debian base system miscellaneous files
+Changes:
+ base-files (999+ragnarok01-6) stable; urgency=medium
+ .
+   * Bump /etc/debian_version to 12.9 to match with latest bookworm point
+     release.
+Checksums-Sha1:
+ acacca82bfc05c7d3bb8c67e5f588fefdc7736d6 5895 base-files_999+ragnarok01-6_amd64.buildinfo
+ ce9c8d89eedcead0310b6d9d7c341a51213bc01f 71076 base-files_999+ragnarok01-6_amd64.deb
+Checksums-Sha256:
+ d9a9975989e69e223b3ef819b17862487502d1f41bfa26b382b6398c6c86048b 5895 base-files_999+ragnarok01-6_amd64.buildinfo
+ 9e0f286f7197c21e9586fc380470182e0a1c348f284a3a9921966f709d056922 71076 base-files_999+ragnarok01-6_amd64.deb
+Files:
+ e3ebd758e51353ec0dedab4112f5e0ae 5895 admin required base-files_999+ragnarok01-6_amd64.buildinfo
+ cc5c2e9d945ae13154b735539a1997b0 71076 admin required base-files_999+ragnarok01-6_amd64.deb
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
